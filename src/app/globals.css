@@ -1,0 +1,35 @@
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Switzer", sans-serif;
+  --font-serif: "Gambetta", serif;
+
+  /* 3. KEEP THE OTHERS AS "GUEST STARS" (Just in case) */
+  --font-general: "General Sans", sans-serif;
+  --font-bespoke: "Bespoke Serif", serif;
+  --font-gambarino: "Gambarino", serif;
+  --font-inter: var(--font-inter);
+
+  --color-deep-navy: #0a0f1c;      /* A luxury dark blue-black */
+  --color-paper-white: #f8f9fa;    /* A soft, non-blinding white */
+  --color-electric-blue: #3b82f6;  /* Your main accent */
+  --color-warning-red: #ef4444;    /* For errors */
+}
+
+/* Optional: Tweaking the Base */
+:root {
+  /* This ensures Switzer looks good on all backgrounds */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* Apply the dark theme globally */
+:root {
+  background-color: var(--color-deep-black); 
+  color: #ffffff;
+}
+
+body {
+  font-family: var(--font-sans);
+  overflow-x: hidden; /* Prevents scrolling glitch */
+}
