@@ -11,7 +11,7 @@ export default function Footer() {
 
       {/* 2. The Links (Grid) */}
       <div className="flex flex-col items-center">
-          <p className="text-gray-400 text-lg">© 2026 Hong Kim</p>
+          <p className="text-gray-400 text-lg">© 2026 Honggyun Kim</p>
       </div>
     </footer>
   );
