@@ -30,8 +30,6 @@ export default function Home() {
         <span>Java Spring</span>
         <span>•</span>
         <span>Next.js</span>
-        <span>•</span>
-        <span>Strategy</span>
       </motion.div>
 
       <FadeIn>
