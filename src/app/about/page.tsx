@@ -15,8 +15,7 @@ export default function About() {
           
           <p className="font-sans text-xl md:text-2xl text-gray-400 leading-relaxed max-w-2xl mb-12">
             I don't just write code; I engineer outcomes. 
-            Background in Global Strategy (Hyundai) and Data Analysis (H&M). 
-            Now building scalable systems with Java & Spring Boot.
+            Background in Data Analysis, now building scalable systems with Java & Spring Boot.
           </p>
 
           {/* CV & Email Buttons */}
