@@ -160,7 +160,6 @@ export default function TLTP() {
           <img src="/nov.jpg" alt="November" className="w-full rounded-lg shadow-lg" />
           <img src="/dec.jpg" alt="December" className="w-full rounded-lg shadow-lg" />
           <img src="/jan.jpg" alt="January" className="w-full rounded-lg shadow-lg" />
-          <img src="/feb.jpg" alt="February" className="w-full rounded-lg shadow-lg" />
         </div>
       </div>
 
