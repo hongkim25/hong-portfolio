@@ -6,18 +6,41 @@ export default function TheBaker() {
 
       {/* 1. HERO - No FadeIn to prevent flash */}
       <div className="w-full py-20 px-8 text-center">
-        <span className="font-sans text-[#DEAE16] tracking-wide uppercase font-bold text-lg md:text-xl block mb-4">
+        <span className="font-sans text-[#F2C946] uppercase text-xl md:text-2xl block mb-4">
           Smart Retail Operations Platform
         </span>
-        <h1 className="text-6xl md:text-9xl font-bold uppercase tracking-tighter leading-none mb-8">
+        <h1 className="text-7xl md:text-[10rem] text-[#6B4423] font-bold uppercase tracking-tighter leading-none mb-8">
           The Baker
         </h1>
-        <p className="text-lg md:text-2xl max-w-4xl mx-auto font-serif italic opacity-80">
+        <p className="text-lg md:text-2xl max-w-3xl mx-auto font-serif italic opacity-80">
           A production platform for a real bakery — built to improve retention and reduce leftovers through better daily decisions.
         </p>
       </div>
 
-      {/* 2. DUAL FEATURES - No FadeIn to prevent flash */}
+      {/* 2. Screenshots Placeholder */}
+        <div className="w-full bg-[var(--page-bg)] py-16 px-8">
+          <div className="border-2 border-dashed border-current/30 p-20 text-xl opacity-50 text-center">
+            Screenshots / GIFs go here
+          </div>
+        </div>
+
+      {/* 3. CTA BUTTONS */}
+        <div className="w-full py-16 px-8">
+          <div className="flex flex-col md:flex-row gap-4 justify-center items-center">
+            <a href="https://thebaker.cc" target="_blank" rel="noopener noreferrer"
+               className="px-10 py-5 bg-[#6B4423] text-white text-xl md:text-2xl font-bold uppercase hover:bg-yellow-100 hover:text-black transition-colors">
+              Visit Live Site
+            </a>
+            <a href="https://github.com/hongkim25" target="_blank" rel="noopener noreferrer"
+               className="px-10 py-5 bg-[#6B4423] text-white text-xl md:text-2xl font-bold uppercase hover:bg-yellow-100 hover:text-black transition-colors">
+              View GitHub
+            </a>
+          </div>
+        </div>
+
+
+      {/* 2. DUAL FEATURES */}
+      <FadeIn>
       <div className="w-full grid grid-cols-1 md:grid-cols-2 gap-0">
         <div className="bg-white text-black p-12 md:p-16">
           <span className="text-sm uppercase tracking-widest opacity-60 block mb-2">For Customers</span>
@@ -38,7 +61,8 @@ export default function TheBaker() {
           </p>
         </div>
       </div>
-
+      </FadeIn>
+      
       {/* 3. PROOF SECTION - The Numbers */}
         <div className="w-full text-black py-20 px-8">
           <div className="text-center mb-12">
@@ -72,27 +96,6 @@ export default function TheBaker() {
               All numbers from <span className="font-bold">production database records</span> — actual purchases and point issuance, not demo data.
               The core goal is retention, and repeat visits showed up immediately.
             </p>
-          </div>
-        </div>
-
-      {/* 4. CTA BUTTONS */}
-        <div className="w-full bg-[#6B4423] py-16 px-8">
-          <div className="flex flex-col md:flex-row gap-4 justify-center items-center">
-            <a href="https://thebaker.cc" target="_blank" rel="noopener noreferrer"
-               className="px-10 py-5 bg-white text-black text-xl md:text-2xl font-bold uppercase tracking-wider hover:bg-white transition-colors">
-              Visit Live Site
-            </a>
-            <a href="https://github.com/hongkim25" target="_blank" rel="noopener noreferrer"
-               className="px-10 py-5 bg-white text-black  text-xl md:text-2xl font-bold uppercase tracking-wider hover:bg-white hover:text-black transition-colors">
-              View GitHub
-            </a>
-          </div>
-        </div>
-
-      {/* 5. Screenshots Placeholder */}
-        <div className="w-full bg-[var(--page-bg)] py-16 px-8">
-          <div className="border-2 border-dashed border-current/30 p-20 text-xl opacity-50 text-center">
-            Screenshots / GIFs go here
           </div>
         </div>
 
@@ -141,7 +144,7 @@ export default function TheBaker() {
         <div className="w-full text-black py-20 px-8 text-center">
           <span className="text-sm uppercase tracking-widest opacity-60 block mb-4">Under The Hood</span>
           <h2 className="text-4xl md:text-6xl font-bold uppercase tracking-tighter leading-none mb-4">
-            Dual-Core<br />Prediction
+            Dual-Core<br />Architecture
           </h2>
           <p className="text-xl md:text-2xl max-w-3xl mx-auto">
             Two models working in parallel to optimize production decisions.
@@ -162,24 +165,25 @@ export default function TheBaker() {
                 </h3>
               </div>
             </div>
-            <p className="text-lg text-gray-400 mb-6">
-              Dynamic Regression — Predict Sales Velocity
-            </p>
             <div className="bg-[#DEAE16]/10 border border-[#DEAE16]/30 p-4 font-mono text-[#DEAE16] text-base md:text-lg mb-6">
-              y = β0 + β1(x1) + ... + βn(xn)
+              Goal: Predict Sales
             </div>
             <div className="space-y-3 text-sm md:text-base">
               <div className="flex gap-2">
                 <span className="text-[#DEAE16]">→</span>
-                <span><span className="text-white font-bold">Day of Week:</span> <span className="text-gray-400">One-hot encoded vectors</span></span>
+                <span><span className="text-white font-bold">Algorithm:</span> <span className="text-gray-200">Dynamic Regression (Seasonality + External Signals)</span></span>
               </div>
               <div className="flex gap-2">
                 <span className="text-[#DEAE16]">→</span>
-                <span><span className="text-white font-bold">Weather:</span> <span className="text-gray-400">Categorical coefficients</span></span>
+                <span><span className="text-white font-bold">Day of Week:</span> <span className="text-gray-200">One-hot encoded vectors</span></span>
               </div>
               <div className="flex gap-2">
                 <span className="text-[#DEAE16]">→</span>
-                <span><span className="text-white font-bold">Logic:</span> <span className="text-gray-400">Base Bias + Weighted Sum</span></span>
+                <span><span className="text-white font-bold">Weather:</span> <span className="text-gray-200">Categorical coefficients</span></span>
+              </div>
+              <div className="flex gap-2">
+                <span className="text-[#DEAE16]">→</span>
+                <span><span className="text-white font-bold">Logic:</span> <span className="text-gray-200">Base Bias + Weighted Sum</span></span>
               </div>
             </div>
           </div>
@@ -195,11 +199,8 @@ export default function TheBaker() {
                 </h3>
               </div>
             </div>
-            <p className="text-lg text-gray-600 mb-6">
-              Sparse Data Handling — Quantify Inventory Risk
-            </p>
             <div className="bg-black/5 border border-black/10 p-4 font-mono text-black text-base md:text-lg mb-6">
-              Challenge: Zero-Inflated Data
+              Goal: Quantify Inventory Risk
             </div>
             <div className="space-y-3 text-sm md:text-base">
               <div className="flex gap-2">

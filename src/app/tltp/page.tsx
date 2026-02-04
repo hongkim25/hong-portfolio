@@ -6,32 +6,32 @@ export default function TLTP() {
     <div className="min-h-screen w-full bg-[var(--page-bg)] text-[var(--page-text)]">
 
       {/* 1. HERO */}
-      <div className="w-full py-24 px-8 text-center">
-        <span className="text-sm uppercase tracking-widest text-blue-500 block mb-4">
+      <div className="w-full py-20 px-8 text-center">
+        <span className="text-xl md:text-2xl uppercase tracking-wide text-black block mb-4">
           The Life Transition Project
         </span>
-        <h1 className="text-7xl md:text-[12rem] font-bold uppercase tracking-tighter leading-none mb-6">
+        <h1 className="text-7xl md:text-[13rem] font-bold uppercase text-white tracking-tighter leading-none mb-6">
           TLTP
         </h1>
-        <p className="text-xl md:text-2xl max-w-3xl mx-auto opacity-80">
-          A structured transition from data analytics to software engineering — built around one rule: visible output.
+        <p className="text-xl md:text-3xl max-w-4xl mx-auto text-white">
+          A structured transition from data analytics to software engineering.
         </p>
       </div>
 
       {/* 2. THE NUMBERS */}
-      <div className="w-full bg-blue-500 text-black py-16 px-8">
+      <div className="w-full text-black py-8 px-8">
         <div className="grid grid-cols-1 md:grid-cols-3 gap-0 max-w-5xl mx-auto">
           <div className="text-center p-8 border-b md:border-b-0 md:border-r border-black/20">
-            <span className="block text-6xl md:text-8xl font-bold mb-2">1,900</span>
+            <span className="block text-6xl md:text-8xl tracking-tighter mb-2">1,900</span>
             <span className="uppercase tracking-wider text-lg font-bold opacity-70">Hours Logged</span>
           </div>
           <div className="text-center p-8 border-b md:border-b-0 md:border-r border-black/20">
-            <span className="block text-6xl md:text-8xl font-bold mb-2">188</span>
-            <span className="uppercase tracking-wider text-lg font-bold opacity-70">Days of Monk Mode</span>
+            <span className="block text-6xl md:text-8xl tracking-tighter mb-2">188</span>
+            <span className="uppercase tracking-wider text-lg font-bold opacity-70">Days</span>
           </div>
           <div className="text-center p-8">
-            <span className="block text-6xl md:text-8xl font-bold mb-2">0</span>
-            <span className="uppercase tracking-wider text-lg font-bold opacity-70">Days Off</span>
+            <span className="block text-6xl md:text-8xl tracking-tighter mb-2">0</span>
+            <span className="uppercase tracking-wider text-lg font-bold opacity-70">Day Off</span>
           </div>
         </div>
       </div>
@@ -39,15 +39,15 @@ export default function TLTP() {
       {/* 3. MISSION STATEMENT */}
       <div className="w-full bg-white text-black py-20 px-8">
         <div className="max-w-4xl mx-auto text-center">
-          <h2 className="font-serif text-4xl md:text-6xl italic mb-8">
-            "Building feels great."
+          <h2 className="font-serif text-2xl md:text-4xl italic mb-8">
+            No More Tutorials. No More "Hello World."
           </h2>
           <div className="space-y-6 text-lg md:text-xl text-gray-700 leading-relaxed text-left">
             <p>
               After leaving my Data Analyst role at H&M in London, I temporarily returned to Korea with a singular mission: <span className="font-bold text-black">transition into a Software Engineer.</span>
             </p>
             <p>
-              However cringey the name sounds, TLTP was literally designed to transition my life — to push myself out of the comfort zone where I took 10 different intro Python courses just to print "Hello World!".
+              I called it TLTP (The Life Transition Project). However cringey the name may sound, TLTP was literally designed to transition my life — to push myself out of the comfort zone where I took 10 different intro Python courses just to print "Hello World!".
             </p>
             <p>
               This is not a "study plan." It's a production-focused system designed to ship real software, document consistency, and build proof over time.
@@ -57,11 +57,11 @@ export default function TLTP() {
       </div>
 
       {/* 4. THE PHASES */}
-      <div className="w-full bg-[#0a0a0a] py-20 px-8">
+      <div className="w-full py-20 px-8">
         <div className="text-center mb-16">
           <span className="text-sm uppercase tracking-widest text-gray-500 block mb-2">9 Months</span>
           <h2 className="text-4xl md:text-6xl font-bold uppercase tracking-tighter text-white">
-            The Phases
+            The Three Phases
           </h2>
         </div>
 
@@ -74,15 +74,15 @@ export default function TLTP() {
               <span className="block text-sm opacity-70 mt-2">Aug 1 — Oct 16</span>
               <span className="block text-3xl font-bold mt-4">600h</span>
             </div>
-            <div className="md:col-span-9 bg-[#1a1a1a] text-white p-8">
-              <p className="text-lg text-gray-300 mb-6">
+            <div className="md:col-span-9 bg-gray-700 text-white p-8">
+              <p className="text-lg text-white mb-6">
                 Foundational saturation. Progressive overload to get used to the 'new life' I chose. Initially tried a bootcamp, then pivoted to self-directed learning.
               </p>
               <div className="flex flex-wrap gap-2">
-                <span className="px-3 py-1 bg-white/10 text-sm">Fundamentals</span>
                 <span className="px-3 py-1 bg-white/10 text-sm">Python</span>
+                <span className="px-3 py-1 bg-white/10 text-sm">HTML, CSS, JavaScript</span>
                 <span className="px-3 py-1 bg-white/10 text-sm">Data Structures</span>
-                <span className="px-3 py-1 bg-white/10 text-sm">Grokking Algorithms</span>
+                <span className="px-3 py-1 bg-white/10 text-sm">CS Fundamentals</span>
               </div>
             </div>
           </div>
@@ -95,8 +95,8 @@ export default function TLTP() {
               <span className="block text-sm opacity-70 mt-2">Oct 17 — Jan 31</span>
               <span className="block text-3xl font-bold mt-4">1,250h</span>
             </div>
-            <div className="md:col-span-9 bg-[#111111] text-white p-8">
-              <p className="text-lg text-gray-300 mb-6">
+            <div className="md:col-span-9 bg-gray-800 text-white p-8">
+              <p className="text-lg text-white mb-6">
                 Pivoted to <span className="text-blue-400 font-bold">Java & Spring Boot</span> to build enterprise-grade skills. Built a production app. Passed Spanish B1.
               </p>
               <div className="flex flex-wrap gap-2">
@@ -104,7 +104,8 @@ export default function TLTP() {
                 <span className="px-3 py-1 bg-white/10 text-sm">Spring Boot 3</span>
                 <span className="px-3 py-1 bg-white/10 text-sm">The Baker (Full Stack)</span>
                 <span className="px-3 py-1 bg-white/10 text-sm">LeetCode</span>
-                <span className="px-3 py-1 bg-white/10 text-sm">System Design</span>
+                <span className="px-3 py-1 bg-white/10 text-sm">Machine Learning</span>
+                <span className="px-3 py-1 bg-white/10 text-sm">Spanish (SIELE B1)</span>
               </div>
             </div>
           </div>
@@ -114,17 +115,17 @@ export default function TLTP() {
             <div className="md:col-span-3 bg-white text-black p-8">
               <span className="text-6xl font-bold block">03</span>
               <span className="text-xl font-bold uppercase">The Launch</span>
-              <span className="block text-sm opacity-70 mt-2">Feb 1 — Apr 30</span>
+              <span className="block text-sm opacity-80 mt-2">Feb 1 — Apr 30</span>
               <span className="block text-3xl font-bold mt-4">NOW</span>
             </div>
-            <div className="md:col-span-9 bg-[#050505] text-white p-8 border-2 border-white">
-              <p className="text-lg text-gray-300 mb-6">
+            <div className="md:col-span-9 bg-[#050505] text-white p-8">
+              <p className="text-lg text-white mb-6">
                 Current status. Objective: <span className="text-white font-bold">Secure Offer.</span> Leveraging my hybrid profile — economics/business education + data analysis + backend engineering.
               </p>
               <div className="flex flex-wrap gap-2">
-                <span className="px-4 py-2 bg-blue-500 text-black text-sm font-bold">Active Job Search</span>
-                <span className="px-4 py-2 bg-blue-500 text-black text-sm font-bold">Interview Prep</span>
-                <span className="px-4 py-2 bg-blue-500 text-black text-sm font-bold">Portfolio Polish</span>
+                <span className="px-3 py-1 bg-blue-500 text-black text-sm font-bold">Active Job Search</span>
+                <span className="px-3 py-1 bg-blue-500 text-black text-sm font-bold">LeetCode</span>
+                <span className="px-3 py-1 bg-blue-500 text-black text-sm font-bold">Interview Prep</span>
               </div>
             </div>
           </div>

@@ -17,22 +17,22 @@ export default function About() {
       </div>
 
       {/* 2. CTA BUTTONS - No FadeIn to prevent flash */}
-      <div className="w-full bg-black py-12 px-8">
+      <div className="w-full py-12 px-8">
         <div className="flex flex-wrap gap-3 justify-center">
           <a href="/cv.pdf" target="_blank"
-             className="px-4 py-4 bg-white text-black text-lg font-bold uppercase tracking-wider hover:bg-[#A6F7E3] transition-colors">
+             className="px-4 py-4 bg-[#015b4e] text-white text-lg font-bold uppercase tracking-wider hover:bg-[#A6F7E3] hover:text-black transition-colors">
             Download CV
           </a>
           <a href="https://www.linkedin.com/in/honggyun-kim/" target="_blank" rel="noopener noreferrer"
-             className="px-4 py-4 border-2 border-white text-white text-lg font-bold uppercase tracking-wider hover:bg-[#A6F7E3] hover:text-black transition-colors">
+             className="px-4 py-4 bg-[#015b4e] text-white text-lg font-bold uppercase tracking-wider hover:bg-[#A6F7E3] hover:text-black transition-colors">
             LinkedIn
           </a>
           <a href="https://github.com/hongkim25" target="_blank" rel="noopener noreferrer"
-             className="px-4 py-4 border-2 border-white text-white text-lg font-bold uppercase tracking-wider hover:bg-[#A6F7E3] hover:text-black transition-colors">
+             className="px-4 py-4 bg-[#015b4e] text-white text-lg font-bold uppercase tracking-wider hover:bg-[#A6F7E3] hover:text-black transition-colors">
             GitHub
           </a>
           <a href="mailto:honggyun.kim90@gmail.com"
-             className="px-4 py-4 border-2 border-white text-white text-lg font-bold uppercase tracking-wider hover:bg-[#A6F7E3] hover:text-black transition-colors">
+             className="px-4 py-4 bg-[#015b4e] text-white text-lg font-bold uppercase tracking-wider hover:bg-[#A6F7E3] hover:text-black transition-colors">
             Email
           </a>
         </div>
