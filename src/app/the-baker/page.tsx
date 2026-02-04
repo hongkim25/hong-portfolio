@@ -35,14 +35,14 @@ export default function TheBaker() {
         </div>
 
       {/* 3. CTA BUTTONS */}
-        <div className="w-full py-16 px-8">
-          <div className="flex flex-col md:flex-row gap-12 justify-center items-center">
+        <div className="w-full py-8 md:py-16 px-4 md:px-8">
+          <div className="flex flex-row gap-3 md:gap-6 justify-center items-center">
             <a href="https://thebaker.cc" target="_blank" rel="noopener noreferrer"
-               className="px-6 py-3 bg-[#6B4423] text-white text-xl md:text-2xl font-bold uppercase hover:bg-yellow-100 hover:text-black transition-colors">
-              Visit Live Site
+               className="px-3 py-2 md:px-6 md:py-3 bg-[#6B4423] text-white text-sm md:text-2xl font-bold uppercase hover:bg-yellow-100 hover:text-black transition-colors">
+              Live Site
             </a>
             <a href="https://github.com/hongkim25/thebaker-portfolio" target="_blank" rel="noopener noreferrer"
-               className="px-6 py-3 bg-[#6B4423] text-white text-xl md:text-2xl font-bold uppercase hover:bg-yellow-100 hover:text-black transition-colors">
+               className="px-3 py-2 md:px-6 md:py-3 bg-[#6B4423] text-white text-sm md:text-2xl font-bold uppercase hover:bg-yellow-100 hover:text-black transition-colors">
               View GitHub
             </a>
           </div>
