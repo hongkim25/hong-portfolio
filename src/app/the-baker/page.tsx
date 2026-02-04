@@ -213,7 +213,7 @@ export default function TheBaker() {
               </div>
               <div className="flex gap-2">
                 <span className="text-[#DEAE16]">→</span>
-                <span><span className="font-bold">Focus:</span> <span className="text-gray-200">Ideentifies high-risk, high-waste items</span></span>
+                <span><span className="font-bold">Focus:</span> <span className="text-gray-200">Identifies high-risk, high-waste items</span></span>
               </div>
             </div>
           </div>
