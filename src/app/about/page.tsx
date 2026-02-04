@@ -1,4 +1,5 @@
 import FadeIn from '@/components/FadeIn';
+import Image from 'next/image';
 
 export default function About() {
   return (
@@ -17,11 +18,11 @@ export default function About() {
       </div>
 
       {/* 2. CTA BUTTONS - No FadeIn to prevent flash */}
-      <div className="w-full py-4 px-8">
+      <div className="w-full py-3 px-8">
         <div className="flex flex-wrap gap-3 justify-center">
-          <a href="/cv.pdf" target="_blank"
+          <a href="/Hong_Kim_Backend_Engineer_CV.pdf" target="_blank"
              className="px-4 py-4 bg-[#015b4e] text-white text-lg font-bold uppercase tracking-wider hover:bg-[#A6F7E3] hover:text-black transition-colors">
-            Download CV
+            CV
           </a>
           <a href="https://www.linkedin.com/in/honggyun-kim/" target="_blank" rel="noopener noreferrer"
              className="px-4 py-4 bg-[#015b4e] text-white text-lg font-bold uppercase tracking-wider hover:bg-[#A6F7E3] hover:text-black transition-colors">
@@ -186,53 +187,92 @@ export default function About() {
               <span className="text-gray-500 ml-2">Basic</span>
             </div>
           </div>
-          <p className="text-center text-gray-800 mt-8 text-lg">
-            Born and raised in South Korea. <br />
-            Studied in Sweden, Spain, France, and Hong Kong.<br /> 
-            Worked in Belgium, Sweden, and the UK.
-          </p>
+          <div className="max-w-4xl mx-auto mt-12 grid grid-cols-1 md:grid-cols-3 gap-6">
+            <div className="text-center p-6 border-l-4 border-black bg-gray-50">
+              <span className="text-sm uppercase tracking-widest text-gray-500 block mb-2">Born & Raised IN</span>
+              <span className="text-xl font-bold">South Korea</span>
+            </div>
+            <div className="text-center p-6 border-l-4 border-black bg-gray-50">
+              <span className="text-sm uppercase tracking-widest text-gray-500 block mb-2">Studied In</span>
+              <span className="text-xl font-bold">Sweden, Spain, France, Hong Kong</span>
+            </div>
+            <div className="text-center p-6 border-l-4 border-black bg-gray-50">
+              <span className="text-sm uppercase tracking-widest text-gray-500 block mb-2">Worked In</span>
+              <span className="text-xl font-bold">Belgium, Sweden, UK</span>
+            </div>
+          </div>
         </div>
       </FadeIn>
 
-      {/* 8. OBSESSIONS */}
+      {/* 8. STREAKS */}
       <FadeIn>
         <div className="w-full bg-[#A6F7E3] text-black py-20 px-8">
           <div className="text-center mb-12">
             <span className="text-sm uppercase tracking-widest opacity-60 block mb-2">Beyond Code</span>
             <h2 className="text-4xl md:text-6xl font-bold uppercase tracking-tighter">
-              Things I Like (A Lot)
+              Streaks
             </h2>
+            <p className="text-lg text-gray-700 mt-4 max-w-2xl mx-auto">
+              Consistency is my competitive advantage. Here's proof.
+            </p>
           </div>
 
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-0 max-w-5xl mx-auto">
-            {/* Duolingo */}
-            <div className="p-12 bg-white text-center">
-              <span className="text-6xl md:text-8xl font-bold text-green-500 block mb-2">2,100</span>
-              <span className="text-xl font-bold uppercase tracking-wide block mb-4">Day Streak</span>
-              <p className="text-gray-600">
-                Duolingo. Every single day for 6 years. Whether it's language or code, I show up.
-              </p>
+          <div className="grid grid-cols-2 md:grid-cols-4 gap-4 max-w-5xl mx-auto">
+            <div className="bg-white rounded-lg overflow-hidden shadow-lg">
+              <div className="aspect-[3/5] w-full overflow-hidden">
+                <img
+                  src="/duolingo.jpeg"
+                  alt="Duolingo Streak"
+                  className="h-full w-full object-cover"
+                />
+              </div>
+              <div className="p-4 text-center">
+                <span className="font-bold text-lg">Duolingo</span>
+              </div>
             </div>
 
-            {/* GQ */}
-            <div className="p-12 bg-black text-white text-center">
-              <span className="text-6xl md:text-8xl font-bold block mb-2">200+</span>
-              <span className="text-xl font-bold uppercase tracking-wide block mb-4">GQ Magazines</span>
-              <p className="text-gray-400">
-                Subscribed for 15 years. My bookshelf is a timeline of aesthetics. It fuels my obsession with product quality and design precision.
-              </p>
+            <div className="bg-white rounded-lg overflow-hidden shadow-lg">
+              <div className="aspect-[3/5] w-full overflow-hidden">
+                <img
+                  src="/babbel.jpg"
+                  alt="Babbel Streak"
+                  className="h-full w-full object-cover"
+                />
+              </div>
+              <div className="p-4 text-center">
+                <span className="font-bold text-lg">Babbel</span>
+              </div>
             </div>
 
-            {/* Always Learning */}
-            <div className="p-12 bg-white text-center">
-              <span className="text-6xl md:text-8xl font-bold text-blue-500 block mb-2">∞</span>
-              <span className="text-xl font-bold uppercase tracking-wide block mb-4">Always Learning</span>
-              <p className="text-gray-600">
-                Babbel. Datacamp. Brilliant. My downtime is spent upgrading my neural network.
-              </p>
+            <div className="bg-white rounded-lg overflow-hidden shadow-lg">
+              <div className="aspect-[3/5] w-full overflow-hidden">
+                <img
+                  src="/datacamp.jpg"
+                  alt="DataCamp Streak"
+                  className="h-full w-full object-cover"
+                />
+              </div>
+              <div className="p-4 text-center">
+                <span className="font-bold text-lg">DataCamp</span>
+              </div>
+            </div>
+
+            <div className="bg-white rounded-lg overflow-hidden shadow-lg">
+              <div className="aspect-[3/5] w-full overflow-hidden">
+                <img
+                  src="/brilliant.jpg"
+                  alt="Brilliant Streak"
+                  className="h-full w-full object-cover"
+                />
+              </div>
+              <div className="p-4 text-center">
+                <span className="font-bold text-lg">Brilliant</span>
+              </div>
             </div>
           </div>
         </div>
+
+
       </FadeIn>
 
     </div>

@@ -7,13 +7,13 @@ export default function TLTP() {
 
       {/* 1. HERO */}
       <div className="w-full py-20 px-8 text-center">
-        <span className="text-xl md:text-2xl uppercase tracking-wide text-black block mb-4">
+        <span className="text-lg md:text-2xl uppercase font-semibold text-black block mb-4">
           The Life Transition Project
         </span>
-        <h1 className="text-7xl md:text-[13rem] font-bold uppercase text-white tracking-tighter leading-none mb-6">
+        <h1 className="text-7xl md:text-[13rem] font-bold uppercase text-blue-700 tracking-tighter leading-none mb-6">
           TLTP
         </h1>
-        <p className="text-xl md:text-3xl max-w-4xl mx-auto text-white">
+        <p className="text-xl md:text-3xl max-w-4xl mx-auto text-gray-800">
           A structured transition from data analytics to software engineering.
         </p>
       </div>
@@ -142,7 +142,29 @@ export default function TLTP() {
         </div>
       </div>
 
-      {/* 6. THE TERMINAL LOG */}
+      {/* 6. TIME TRACKING */}
+      <div className="w-full bg-gray-100 py-20 px-8">
+        <div className="text-center mb-12">
+          <span className="text-sm uppercase tracking-widest text-gray-500 block mb-2">Time Tracking</span>
+          <h2 className="text-4xl md:text-6xl font-bold uppercase tracking-tighter text-black mb-4">
+            Month by Month
+          </h2>
+          <p className="text-gray-600 text-lg">
+            Screenshots from my time-tracking app documenting every hour invested.
+          </p>
+        </div>
+        <div className="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+          <img src="/ypt1.jpg" alt="YPT Summary" className="w-full rounded-lg shadow-lg" />
+          <img src="/sep.jpg" alt="September" className="w-full rounded-lg shadow-lg" />
+          <img src="/oct.jpg" alt="October" className="w-full rounded-lg shadow-lg" />
+          <img src="/nov.jpg" alt="November" className="w-full rounded-lg shadow-lg" />
+          <img src="/dec.jpg" alt="December" className="w-full rounded-lg shadow-lg" />
+          <img src="/jan.jpg" alt="January" className="w-full rounded-lg shadow-lg" />
+          <img src="/feb.jpg" alt="February" className="w-full rounded-lg shadow-lg" />
+        </div>
+      </div>
+
+      {/* 7. THE TERMINAL LOG */}
 
       <div className="w-full bg-[#050505] py-20 px-8">
         <div className="text-center mb-12">

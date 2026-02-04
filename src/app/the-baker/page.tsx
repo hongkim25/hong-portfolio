@@ -6,10 +6,10 @@ export default function TheBaker() {
 
       {/* 1. HERO - No FadeIn to prevent flash */}
       <div className="w-full py-20 px-8 text-center">
-        <span className="font-sans text-[#F2C946] uppercase text-xl md:text-2xl block mb-4">
+        <span className="font-sans text-[#F2C946] font-semibold uppercase text-xl md:text-2xl block mb-4">
           Smart Retail Operations Platform
         </span>
-        <h1 className="text-7xl md:text-[10rem] text-[#6B4423] font-bold uppercase tracking-tighter leading-none mb-8">
+        <h1 className="text-6xl md:text-[8rem] text-[#6B4423] font-bold uppercase tracking-tighter leading-none mb-8">
           The Baker
         </h1>
         <p className="text-lg md:text-2xl max-w-3xl mx-auto font-serif italic opacity-80">
@@ -17,22 +17,32 @@ export default function TheBaker() {
         </p>
       </div>
 
-      {/* 2. Screenshots Placeholder */}
-        <div className="w-full bg-[var(--page-bg)] py-16 px-8">
-          <div className="border-2 border-dashed border-current/30 p-20 text-xl opacity-50 text-center">
-            Screenshots / GIFs go here
+      {/* 2. Demo Video */}
+        <div className="w-full bg-[var(--page-bg)] py-0 px-8">
+          <div className="max-w-4xl mx-auto">
+            <video
+              className="w-full rounded-lg shadow-2xl"
+              controls
+              autoPlay
+              muted
+              loop
+              playsInline
+            >
+              <source src="/thebaker.MP4" type="video/mp4" />
+              Your browser does not support the video tag.
+            </video>
           </div>
         </div>
 
       {/* 3. CTA BUTTONS */}
         <div className="w-full py-16 px-8">
-          <div className="flex flex-col md:flex-row gap-4 justify-center items-center">
+          <div className="flex flex-col md:flex-row gap-12 justify-center items-center">
             <a href="https://thebaker.cc" target="_blank" rel="noopener noreferrer"
-               className="px-10 py-5 bg-[#6B4423] text-white text-xl md:text-2xl font-bold uppercase hover:bg-yellow-100 hover:text-black transition-colors">
+               className="px-6 py-3 bg-[#6B4423] text-white text-xl md:text-2xl font-bold uppercase hover:bg-yellow-100 hover:text-black transition-colors">
               Visit Live Site
             </a>
-            <a href="https://github.com/hongkim25" target="_blank" rel="noopener noreferrer"
-               className="px-10 py-5 bg-[#6B4423] text-white text-xl md:text-2xl font-bold uppercase hover:bg-yellow-100 hover:text-black transition-colors">
+            <a href="https://github.com/hongkim25/thebaker-portfolio" target="_blank" rel="noopener noreferrer"
+               className="px-6 py-3 bg-[#6B4423] text-white text-xl md:text-2xl font-bold uppercase hover:bg-yellow-100 hover:text-black transition-colors">
               View GitHub
             </a>
           </div>
