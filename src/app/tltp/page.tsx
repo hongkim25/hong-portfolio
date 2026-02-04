@@ -15,6 +15,16 @@ export default function TLTP() {
             TLTP
           </h1>
 
+        <div>
+          TLTP (The Life Transition Project)
+          A structured transition from data analytics to software engineering — built around one rule: visible output.
+
+          This is not a “study plan.”
+          It’s a production-focused system designed to ship real software, document consistency, and build proof over time.
+
+          The log below is intentionally raw — a command-line style record of daily execution.
+        </div>
+
           <div className="grid grid-cols-1 md:grid-cols-3 gap-5">
             <div>
               <span className="block text-4xl md:text-7xl font-display font-mono text-white mb-2">1,900</span>

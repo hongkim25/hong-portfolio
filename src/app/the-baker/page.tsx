@@ -7,22 +7,45 @@ export default function TheBaker() {
       {/* 1. HERO - Full width */}
       <FadeIn>
         <div className="w-full py-20 px-8 text-center">
-          <span className="font-sans text-blue-500 tracking-wide uppercase font-bold text-lg mb-4 block">
+          <span className="font-sans text-[#DEAE16] tracking-wide uppercase font-bold text-lg md:text-xl fomb-4 block">
             Java + Spring Boot Project
           </span>
           <h1 className="text-5xl md:text-8xl font-bold uppercase tracking-tighter leading-none mb-6">
             The Baker
           </h1>
-          <p className="text-xl md:text-3xl mb-8">
+          <p className="text-xl text-gray-500 md:text-3xl">
             Smart Retail Operations Platform
           </p>
+          <p className="text-xl md:text-2xl mb-8">
+          A production platform for a real bakery built to improve retention and reduce leftovers through better daily decisions.
+          </p>
+
+          <div className="max-w-6xl mx-auto">
+            <p className="text-lg md:text-xl">
+              Customer side: loyalty, real-time menu visibility, and reservations.
+            </p>
+            <p className="text-lg md:text-xl mb-10">
+              Staff side: a dashboard that recommends production levels using sales history + weather signals.
+            </p>
+            <p className="text-lg md:text-xl mb-2">
+              Early signals (first week) <br />
+              - ~70% adoption among in-store customers (opt-in) <br />
+              - 200+ real customers served <br />
+              - 300+ loyalty point records captured in SQL <br />
+              - Early repeats: several customers returned and earned points 2+ times within days
+            </p>
+            <p className="text-lg md:text-xl mb-10">
+            ~70% of purchasing customers opted in to loyalty, with 200 unique customers and 300+ point-issuance transactions recorded in production SQL (≈100 from repeat visits).
+            This matters because the core goal is retention — and repeat visits showed up immediately. <br />
+            All numbers above are taken from production database records (actual purchases and point issuance), not demo data or vanity sign-ups.
+            </p>
+          </div>  
           <div className="flex gap-4 justify-center">
             <a href="https://thebaker.cc" target="_blank" rel="noopener noreferrer" className="px-6 py-3 border-2 border-current text-black text-lg md:text-xl font-bold hover:bg-white/100 transition-colors">
               Visit Live Site ↗
             </a>
             <a href="https://github.com/hongkim25" target="_blank" rel="noopener noreferrer" className="px-6 py-3 border-2 border-current text-black text-lg md:text-xl font-bold hover:bg-white/100 transition-colors">
               View GitHub
-              CHANGE LATER
             </a>
           </div>
 
@@ -77,7 +100,7 @@ export default function TheBaker() {
       {/* 3. DUAL-CORE INTRO - Full width */}
       <FadeIn>
         <div className="w-full py-20 px-8 text-center">
-          <h2 className="text-4xl md:text-7xl font-bold uppercase tracking-tighter leading-none mb-4">
+          <h2 className="text-3xl md:text-5xl font-bold uppercase tracking-tighter leading-none mb-4">
             Dual-Core Prediction Logic
           </h2>
           <p className="text-xl md:text-2xl">
@@ -131,8 +154,8 @@ export default function TheBaker() {
 
       {/* 5. TECH STACK - Full width */}
       <FadeIn>
-        <div className="w-full py-20 px-8 text-center">
-          <h3 className="text-4xl md:text-6xl font-bold uppercase tracking-tighter mb-8">
+        <div className="w-full py-16 px-8 text-center">
+          <h3 className="text-3xl md:text-5xl font-bold uppercase tracking-tighter mb-8">
             Tech Stack
           </h3>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-4 text-lg md:text-xl">

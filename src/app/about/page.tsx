@@ -14,50 +14,83 @@ export default function About() {
           </h1>
           
           <p className="font-sans text-xl md:text-2xl text-gray-700 leading-relaxed mb-12">
-            I engineer outcomes. 
-            Background in Data Analysis, now building scalable systems with Java & Spring Boot.
+            I build production software that turns business problems into measurable outcomes.
           </p>
 
           {/* CV & Email Buttons */}
-          <div className="flex gap-4 justify-center mb-20 text-xl">
-            <a href="/cv.pdf" target="_blank" className="px-8 py-3 bg-white text-black font-bold hover:bg-green-100 transition-colors">
+          <div className="flex gap-4 justify-center mb-10 text-xl">
+            <a href="/cv.pdf" target="_blank" className="px-5 py-3 bg-white text-black font-bold hover:bg-green-100 transition-colors">
               DOWNLOAD CV
             </a>
-            <a href="mailto:honggy@example.com" className="px-8 py-3 bg-white text-black font-bold hover:bg-green-100 transition-colors">
-              EMAIL
-            </a>
-            <a href="https://www.linkedin.com/in/honggyun-kim/" target="_blank" className="px-8 py-3 bg-white text-black font-bold hover:bg-green-100 transition-colors">
+            <a href="https://www.linkedin.com/in/honggyun-kim/" target="_blank" className="px-5 py-3 bg-white text-black font-bold hover:bg-green-100 transition-colors">
               LINKEDIN
             </a>
-              <a href="https://github.com/hongkim25" target="_blank" className="px-8 py-3 bg-white text-black font-bold hover:bg-green-100 transition-colors">
+              <a href="https://github.com/hongkim25" target="_blank" className="px-5 py-3 bg-white text-black font-bold hover:bg-green-100 transition-colors">
               GITHUB
+            </a>
+            <a href="mailto:honggyun.kim90@gmail.com" className="px-5 py-3 bg-white text-black font-bold hover:bg-green-100 transition-colors">
+              EMAIL
             </a>
           </div>
         </FadeIn>
       </div>
 
+      <div className="px-8 mb-16 text-gray-700">
+        My background sits at the intersection of business, data, and engineering.
+        <br />
+        I earned a B.A. in Economics and an a master’s in international business at Stockholm School of Economics.
+        <br />
+        What pushed me toward software engineering was simple: I wanted to build the systems that turn insight into action.
+        <br />
+        I’m now moving out of my comfort zone to become an engineer who can design, implement, and ship production software, focusing on production-ready software, clean UX, and measurable impact.
+        <br />
+        Outside work, I love learning languages and exploring new places. I speak Korean and English, and I also use French and Spanish, plus basic Swedish. A few weeks ago, I took the Spanish exam in January 2026 and scored B1 in every section. I’ve lived and worked in France, Belgium, Spain, Hong Kong, Sweden and the UK.
+      </div>
+
+      <div className="px-8 mb-32 text-gray-700">
+      <span className="text-gray-500 not-italic font-sans text-3xl md:text-5xl font-bold tracking-tighter">Why software engineering</span>      
+      <br />
+      In analytics, I could identify problems — but I couldn’t build the systems to fix them. <br />
+      I wanted to own the full loop: define the problem, ship the solution, and measure the impact. <br />
+      That decision became TLTP: a structured transition built around one rule — produce visible output.
+      <br /> <br />
+      <span className="text-gray-500 not-italic font-sans text-3xl md:text-5xl font-bold tracking-tighter">What I bring</span>
+      <br />      
+      - Product intuition from business training: I start with constraints and metrics. <br />
+      - Analytical rigor: I’m comfortable with data, segmentation, and trade-offs. <br />
+      - Engineering execution: I build production-ready systems with clean UX and reliable backend foundations. <br />
+      <br />
+      <span className="text-gray-500 not-italic font-sans text-3xl md:text-5xl font-bold tracking-tighter">Experience</span><br />
+      Data analytics in Fashion Retail:<br />
+      I worked on customer and business problems in global fashion retail helping make business decisions with SQL and BI tools.<br />
+      Now I’m focused on building the systems behind those decisions.
+      <br /><br />
+      <span className="text-gray-500 not-italic font-sans text-3xl md:text-5xl font-bold tracking-tighter">Languages</span><br />
+      Korean (native) · English (professional) · French (B2)) · Spanish (B1) · Swedish (basic))
+      </div>
+
       {/* --- TECH STACK GRID --- */}
-      <div className="px-8 mb-32">
+      <div className="px-8 mb-16">
         <FadeIn>
-          <h3 className="text-sm font-bold uppercase tracking-widest text-gray-500 mb-8 border-b border-gray-800 pb-2">
-            The Arsenal
+          <h3 className="text-gray-500 not-italic font-sans text-3xl md:text-5xl font-bold tracking-tighter pb-2">
+            Tech Skills
           </h3>
           <div className="grid grid-cols-2 md:grid-cols-4 gap-8">
             <div>
-              <span className="block text-white font-bold text-lg">Java / Spring Boot</span>
-              <span className="text-sm text-gray-500">Core Backend</span>
+              <span className="block text-gray-900 font-bold text-xl">Java / Spring Boot</span>
+              <span className="text-sm text-gray-900">Core Backend</span>
             </div>
             <div>
-              <span className="block text-white font-bold text-lg">Next.js / React</span>
-              <span className="text-sm text-gray-500">Frontend Architecture</span>
+              <span className="block text-gray-900 font-bold text-xl">Next.js / React / TypeScript</span>
+              <span className="text-sm text-gray-900">Frontend Architecture</span>
             </div>
             <div>
-              <span className="block text-white font-bold text-lg">PostgreSQL</span>
-              <span className="text-sm text-gray-500">Database Design</span>
+              <span className="block text-gray-900 font-bold text-xl">PostgreSQL</span>
+              <span className="text-sm text-gray-900">Database Design</span>
             </div>
             <div>
-              <span className="block text-white font-bold text-lg">System Design</span>
-              <span className="text-sm text-gray-500">Architecture</span>
+              <span className="block text-gray-900 font-bold text-xl">Python</span>
+              <span className="text-sm text-gray-900">Data Science & Automation</span>
             </div>
           </div>
         </FadeIn>

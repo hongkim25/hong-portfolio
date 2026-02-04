@@ -27,9 +27,8 @@ export default function Home() {
         transition={{ duration: 0.5 }} //
         className="mt-12 flex gap-6 text-lg md:text-lg font-medium text-gray-100 tracking-[0.1em] uppercase z-10"
       >
-        <span>Hong Kim</span>
-        <span>•</span>
-        <span>Software Engineer</span>
+        <span>I ship production software for real operations. <br />
+        Featured project: The Baker — loyalty, reservations, and demand forecasting for a bakery.</span>
       </motion.div>
 
     </main>

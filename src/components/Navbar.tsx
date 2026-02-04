@@ -9,7 +9,7 @@ export default function Navbar() {
       </Link>
 
       {/* Menu Links */}
-      <div className="flex gap-[2vw] md:gap-[1.5vw] text-[5vw] md:text-[3.5vw] font-medium">
+      <div className="flex gap-[2vw] md:gap-[1.5vw] text-[5vw] md:text-[3.5vw] tracking-tight font-medium">
         <Link href="/about" className="hover:text-black transition-colors">
           ABOUT
         </Link>
