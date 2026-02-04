@@ -1,14 +1,15 @@
 'use client';
-import { motion } from 'framer-motion';
 
-const LOG_DATA = `
-THE LIFE TRANSITION PROJECT: 1 AUGUST 2025 - 30 APRIL 2026 (39 WEEKS, 273 DAYS)
+// FULL LOG DATA
+const LOG_DATA = `THE LIFE TRANSITION PROJECT: 1 AUGUST 2025 - 30 APRIL 2026 (39 WEEKS, 273 DAYS)
 
 [CURRENT STATE]: LAUNCH PHASE INITIATED
 ---------------------------------------------------
 
 WEEK 27
-2 FEB 2026 - Woke up at 6:50. Continued pushing minor updates for the bakery app, continued Algorithms for Coding Tests course (completed 34 out of 56 lectures), reviewed Neetcode 150 (Copy List With Random Pointers), talked to Gemini/Claude/ChatGPT, continued Data Types and Exceptions in Java course on Datacamp, practiced Python on Brilliant, and practiced French/Spanish on Babbel/Duolingo. Beginning of the launch phase!
+3 FEB 2026 - Woke up at 6:50. Started making the personal website, continued Algorithms for Coding Tests course (completed 35 out of 56 lectures), reviewed Neetcode 150 (Remove Nth Node from End of List), talked to Gemini/Claude/ChatGPT, continued Data Types and Exceptions in Java course on Datacamp, practiced Python on Brilliant, and practiced French/Spanish on Babbel/Duolingo.
+
+2 FEB 2026 - Woke up at 6:50. Continued pushing minor updates for the bakery app, continued Algorithms for Coding Tests course (completed 34 out of 56 lectures), reviewed Neetcode 150 (Copy List With Random Pointers), talked to Gemini/Claude/ChatGPT, continued Data Types and Exceptions in Java course on Datacamp, practiced Python on Brilliant, and practiced French/Spanish on Babbel/Duolingo.
 
 1 FEB 2026 - Woke up at 6:20. Updated reservation and points logic to prevent staff mistake, continued Algorithms for Coding Tests course (completed 33 out of 56 lectures), reviewed Neetcode 150 (Add Two Numbers), talked to Gemini/Claude/ChatGPT, continued Data Types and Exceptions in Java course on Datacamp, practiced Python on Brilliant, and practiced French/Spanish on Babbel/Duolingo. Beginning of the launch phase!
 
@@ -17,7 +18,7 @@ WEEK 27
 30 JAN 2026 - Woke up at 6:20. Launched the Bakery Web App to customers!!!, continued Algorithms for Coding Tests course (completed 32 out of 56 lectures), reviewed Neetcode 150 (Subtree of Another Tree), talked to Gemini/Claude/ChatGPT, continued Data Types and Exceptions in Java course on Datacamp, practiced Python on Brilliant, and practiced French/Spanish on Babbel/Duolingo.
 
 WEEK 26
-F 29 JAN 2026 - Woke up at 6:30. Finished adding and editing images for the menu page, updated the historical data for the prediction algorithm, and had a final check for customer launch of the Bakery Web App, continued Algorithms for Coding Tests course (completed 31 out of 56 lectures), reviewed Neetcode 150 (Lowest Common Ancestor of a Binary Search Tree), talked to Gemini/Claude/ChatGPT, continued Data Types and Exceptions in Java course on Datacamp, practiced Python on Brilliant, and practiced French/Spanish on Babbel/Duolingo.
+29 JAN 2026 - Woke up at 6:30. Finished adding and editing images for the menu page, updated the historical data for the prediction algorithm, and had a final check for customer launch of the Bakery Web App, continued Algorithms for Coding Tests course (completed 31 out of 56 lectures), reviewed Neetcode 150 (Lowest Common Ancestor of a Binary Search Tree), talked to Gemini/Claude/ChatGPT, continued Data Types and Exceptions in Java course on Datacamp, practiced Python on Brilliant, and practiced French/Spanish on Babbel/Duolingo.
 
 28 JAN 2026 - Woke up at 6:20. Updated about page, added and edited images for the menu page, updated the points percentage, fixed reservation cancellation not showing up on the staff page for the Bakery Web App, continued Algorithms for Coding Tests course (completed 30 out of 56 lectures), reviewed Neetcode 150 (Binary Tree Level Order Traversal), talked to Gemini/Claude/ChatGPT, continued Data Types and Exceptions in Java course on Datacamp, practiced Python on Brilliant, and practiced French/Spanish on Babbel/Duolingo.
 
@@ -406,7 +407,7 @@ WEEK 2
 
 8 AUG 2025 - Woke up at 6:20. Watched ChatGPT 5 release videos with trials, talked to Gemini/ChatGPT, read co-intelligence, and took Naver Boostcamp pre-courses. Naver pre-course: Python data handling - CSV, html, regex, XML, JSON, Numpy - numpy, ndarray, shape, dtype, reshape, indexing, slicing, arange, ones, zeros, empty, identity, eye, diag, random sampling, sum, axis, mean, std, concat, element-wise operations, dot product, transpose, broadcasting, all & any, np.where, argmax & argmin, loadtxt & savetxt, Pandas - pandas, series, dataframe, loc, iloc
 
-WEEK 1 (THE BEGINNING)
+WEEK 1
 7 AUG 2025 - Woke up at 7:00. Took Naver Boostcamp pre-courses, talked to Gemini/ChatGPT, and read co-intelligence. Naver pre-course: OOP (Object Oriented Programming): action & attribute, class, method, object(instance), characteristics (inheritance, polymorphism, visibility), decorate (first-class objects, inner function, decorator), Module and Project: namespace, built-in modules, package, virtual environment, Exception, file, log handling: try ~ except, directory and file, pickle, print vs logging, configparser, argparser
 
 6 AUG 2025 - Woke up at 6:20. Continued to take Naver Boostcamp pre-courses, and also spent quite some time talking to both ChatGPT and Gemini discussing TLTP. Naver pre-course: Pythonic code - split & join, list comprehension, enumerate & zip, lambda & map & reduce, generator, asterisk (*args, **kwargs)
@@ -420,48 +421,139 @@ WEEK 1 (THE BEGINNING)
 2 AUG 2025 - I could wake up at 6am! It's been a while since I woke up early in the morning as I have suffered so much from the jet lag since I left the UK. I read ~50 pages of co-intelligence, checked tons of youtube videos comparing different bootcamps, and continued to take the Naver Boostcamp pre-course. Naver pre-course: Python overview - compiler vs interpreter, why Python?
 
 1 AUG 2025 - It was the first day of the project. It was also the first day I decided to stay sober. I took the intro courses of the Naver Boostcamp pre-course. Naver pre-course: Basic computer class for newbies
-`;
+
+1 AUG 2025 - It was the first day of the project.`;
+
+// Parse log data into structured format
+interface LogEntry {
+  date: string;
+  content: string;
+}
+
+interface WeekData {
+  week: string;
+  entries: LogEntry[];
+}
+
+function parseLogData(data: string): { header: string; weeks: WeekData[] } {
+  const lines = data.split('\n');
+  let header = '';
+  const weeks: WeekData[] = [];
+  let currentWeek: WeekData | null = null;
+  let currentEntry: LogEntry | null = null;
+
+  for (let i = 0; i < lines.length; i++) {
+    const line = lines[i];
+
+    // Header lines (before first WEEK)
+    if (!currentWeek && !line.startsWith('WEEK')) {
+      header += line + '\n';
+      continue;
+    }
+
+    // Week header
+    if (line.startsWith('WEEK')) {
+      if (currentEntry && currentWeek) {
+        currentWeek.entries.push(currentEntry);
+      }
+      if (currentWeek) {
+        weeks.push(currentWeek);
+      }
+      currentWeek = { week: line, entries: [] };
+      currentEntry = null;
+      continue;
+    }
+
+    // Date entry (starts with day number or month abbreviation pattern)
+    const dateMatch = line.match(/^(\d{1,2}\s+\w{3}\s+\d{4})\s*-\s*(.*)/);
+    if (dateMatch && currentWeek) {
+      if (currentEntry) {
+        currentWeek.entries.push(currentEntry);
+      }
+      currentEntry = { date: dateMatch[1], content: dateMatch[2] };
+      continue;
+    }
+
+    // Continuation of current entry
+    if (currentEntry && line.trim()) {
+      currentEntry.content += '\n' + line;
+    }
+  }
+
+  // Push last entry and week
+  if (currentEntry && currentWeek) {
+    currentWeek.entries.push(currentEntry);
+  }
+  if (currentWeek) {
+    weeks.push(currentWeek);
+  }
+
+  return { header: header.trim(), weeks };
+}
 
 export default function LogTerminal() {
+  const { header, weeks } = parseLogData(LOG_DATA);
+
   return (
-    <div className="w-full max-w-5xl mx-auto mt-24">
-      
-      {/* Terminal Window Header */}
-      <div className="bg-[#1a1b26] rounded-t-lg p-3 flex items-center gap-2 border border-gray-800 border-b-0">
-        <div className="w-3 h-3 rounded-full bg-red-500/80" />
-        <div className="w-3 h-3 rounded-full bg-yellow-500/80" />
-        <div className="w-3 h-3 rounded-full bg-green-500/80" />
-        <div className="ml-4 text-xs text-gray-400 font-mono">hong@tltp: ~/daily-logs</div>
+    <div className="w-full max-w-4xl mx-auto">
+
+      {/* Header */}
+      <div className="mb-12 pb-8 border-b border-gray-800">
+        <h3 className="text-2xl md:text-3xl font-bold text-white mb-4 tracking-tight">
+          THE LIFE TRANSITION PROJECT
+        </h3>
+        <p className="text-gray-400 text-lg">
+          1 August 2025 — 30 April 2026
+        </p>
+        <p className="text-gray-500 mt-2">
+          39 Weeks • 273 Days • Zero Days Off
+        </p>
       </div>
 
-      {/* Terminal Content */}
-      <motion.div 
-        initial={{ opacity: 0 }}
-        whileInView={{ opacity: 1 }}
-        className="bg-[#0c0c0c] border border-gray-800 rounded-b-lg p-6 font-mono text-sm md:text-xs overflow-y-auto h-[600px] shadow-2xl relative"
-      >
-        {/* The Blinking Cursor Effect at Top */}
-        <div className="flex items-center gap-2 mb-4 text-green-400 font-bold">
-          <span>➜</span>
-          <span>cat tltp_history.log</span>
-          <motion.span 
-            animate={{ opacity: [0, 1, 0] }}
-            transition={{ duration: 1, repeat: Infinity }}
-            className="w-2 h-4 bg-green-400 block"
-          />
-        </div>
+      {/* Weeks */}
+      <div className="space-y-12">
+        {weeks.map((weekData, weekIndex) => (
+          <div key={weekIndex} className="group">
+            {/* Week Header */}
+            <div className="flex items-center gap-4 mb-6">
+              <span className="text-blue-500 font-bold text-sm tracking-widest uppercase">
+                {weekData.week}
+              </span>
+              <div className="flex-1 h-px bg-gray-800 group-hover:bg-blue-500/50 transition-colors" />
+            </div>
 
-        {/* The Actual Text */}
-        <pre className="whitespace-pre-wrap text-gray-300 leading-relaxed font-mono">
-          {LOG_DATA}
-        </pre>
-        
-        {/* Bottom anchor */}
-        <div className="mt-8 text-green-500 font-bold">
-          ➜ <span className="animate-pulse">_</span>
-        </div>
+            {/* Entries */}
+            <div className="space-y-4 pl-4 border-l border-gray-800 group-hover:border-gray-700 transition-colors">
+              {weekData.entries.map((entry, entryIndex) => (
+                <div
+                  key={entryIndex}
+                  className="relative pl-6"
+                >
+                  {/* Dot */}
+                  <div className="absolute left-0 top-2 w-2 h-2 bg-gray-700 group-hover:bg-blue-500 transition-colors -translate-x-[calc(50%+1px)]" />
 
-      </motion.div>
+                  {/* Date */}
+                  <span className="text-white font-medium text-sm block mb-1">
+                    {entry.date}
+                  </span>
+
+                  {/* Content */}
+                  <p className="text-gray-400 text-sm leading-relaxed">
+                    {entry.content}
+                  </p>
+                </div>
+              ))}
+            </div>
+          </div>
+        ))}
+      </div>
+
+      {/* Footer */}
+      <div className="mt-16 pt-8 border-t border-gray-800 text-center">
+        <p className="text-gray-500 text-sm">
+          End of log. The grind continues.
+        </p>
+      </div>
     </div>
   );
 }

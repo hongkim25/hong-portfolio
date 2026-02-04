@@ -2,14 +2,14 @@ import Link from 'next/link';
 
 export default function Navbar() {
   return (
-    <nav className="w-full py-3 px-3 flex justify-between items-center bg-[#FF5733]">
+    <nav className="w-full flex justify-between items-center bg-[var(--nav-bg)] text-[var(--nav-text)] transition-colors duration-500 ease-in-out leading-none">
       {/* Logo */}
-      <Link href="/" className="text-6xl font-bold text-white-900 hover:text-black">
+      <Link href="/" className="text-[5vw] md:text-[3.5vw] font-bold hover:text-black transition-colors leading-none">
         HONG KIM
       </Link>
 
       {/* Menu Links */}
-      <div className="flex gap-8 text-6xl font-medium text-white">
+      <div className="flex gap-[2vw] md:gap-[1.5vw] text-[5vw] md:text-[3.5vw] font-medium">
         <Link href="/about" className="hover:text-black transition-colors">
           ABOUT
         </Link>

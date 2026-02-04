@@ -10,10 +10,8 @@
   --font-gambarino: "Gambarino", serif;
   --font-inter: var(--font-inter);
 
-  --color-deep-navy: #0a0f1c;      /* A luxury dark blue-black */
-  --color-paper-white: #f8f9fa;    /* A soft, non-blinding white */
-  --color-electric-blue: #3b82f6;  /* Your main accent */
-  --color-warning-red: #ef4444;    /* For errors */
+  --color-deep-navy: #0a0f1c;      
+  --color-paper-white: #f8f9fa;    
 }
 
 /* Optional: Tweaking the Base */
@@ -25,8 +23,16 @@
 
 /* Apply the dark theme globally */
 :root {
-  background-color: var(--color-deep-black); 
+  background-color: var(--color-deep-black);
   color: #ffffff;
+
+  /* Page theme variables (set by ThemeProvider) */
+  --page-bg: #050505;
+  --page-text: #ffffff;
+  --nav-bg: #000000;
+  --nav-text: #ffffff;
+  --footer-bg: #ffffff;
+  --footer-text: #000000;
 }
 
 body {

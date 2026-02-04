@@ -8,15 +8,15 @@ export default function Home() {
     <main className="h-screen w-full flex flex-col justify-center items-center text-center bg-[#6017B3] text-white overflow-hidden relative">
       
       {/* The Text Animation */}
-      <motion.div 
-        initial={{ opacity: 0, y: 50 }} // Start invisible and 50px down
-        animate={{ opacity: 1, y: 0 }}  // Animate to visible and original position
-        transition={{ duration: 1.2, ease: "easeOut" }} // Take 1 second
-        className="p-8 rounded-xl border border-white"
-        whileHover={{ scale: 1.5, rotate: 1 }} // Grows slightly and tilts
-        whileTap={{ scale: 0.95 }}              // Shrinks when clicked (like a real button)
+      <motion.div
+        initial={{ opacity: 0, y: 50 }}
+        animate={{ opacity: 1, y: 0 }}
+        transition={{ duration: 1.2, ease: "easeOut" }}
+        className="p-4 md:p-8 border border-white"
+        whileHover={{ scale: 1.2, rotate: 1 }}
+        whileTap={{ scale: 1.1, rotate: -1 }}
       >
-        <h1 className="text-[6vw] font-bold leading-[0.85] tracking-tighter uppercase">
+        <h1 className="text-[12vw] md:text-[6vw] font-bold leading-[0.85] tracking-tighter uppercase">
           WELCOME
         </h1>
       </motion.div>
@@ -24,20 +24,14 @@ export default function Home() {
       <motion.div 
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}
-        transition={{ delay: 0.5, duration: 1 }} // Wait 0.8s, then fade in
-        className="mt-12 flex gap-6 text-lg md:text-base font-medium text-gray-400 tracking-[0.2em] uppercase z-10"
+        transition={{ duration: 0.5 }} //
+        className="mt-12 flex gap-6 text-lg md:text-lg font-medium text-gray-100 tracking-[0.1em] uppercase z-10"
       >
-        <span>Java Spring</span>
+        <span>Hong Kim</span>
         <span>•</span>
-        <span>Next.js</span>
+        <span>Software Engineer</span>
       </motion.div>
 
-      <FadeIn>
-      <div className="space-y-1 mt-20">
-        <h1 className="font-gambetta text-3xl font-semibold">Hi! My name is Hong!</h1>
-        <p className="font-gambetta text-xl">Welcome to my site!</p>
-      </div>
-      </FadeIn>
     </main>
   );
 }
