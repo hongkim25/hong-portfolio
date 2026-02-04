@@ -115,7 +115,7 @@ export default function TheBaker() {
               </div>
               <div className="border-l-4 border-red-500 pl-6">
                 <span className="font-bold text-xl block mb-1">Operational Waste</span>
-                <p className="text-gray-400">Over-production due to lack of data.</p>
+                <p className="text-gray-400">Over-production due to lack of historical data.</p>
               </div>
             </div>
           </div>
@@ -155,7 +155,7 @@ export default function TheBaker() {
       <FadeIn>
         <div className="w-full grid grid-cols-1 md:grid-cols-2 gap-0">
           {/* Demand Model - Left */}
-          <div className="bg-[#47280e] text-white p-12 md:p-16">
+          <div className="bg-white text-[#47280e] p-12 md:p-16">
             <div className="flex items-center gap-4 mb-6">
               <span className="text-5xl md:text-7xl font-bold tracking-tight text-[#DEAE16]">01</span>
               <div>
@@ -171,27 +171,27 @@ export default function TheBaker() {
             <div className="space-y-3 text-sm md:text-base">
               <div className="flex gap-2">
                 <span className="text-[#DEAE16]">→</span>
-                <span><span className="text-white font-bold">Algorithm:</span> <span className="text-gray-200">Dynamic Regression (Seasonality + External Signals)</span></span>
+                <span><span className="text-[#47280e] font-bold">Algorithm:</span> <span className="text-gray-700">Dynamic Regression (Seasonality + External Signals)</span></span>
               </div>
               <div className="flex gap-2">
                 <span className="text-[#DEAE16]">→</span>
-                <span><span className="text-white font-bold">Day of Week:</span> <span className="text-gray-200">One-hot encoded vectors</span></span>
+                <span><span className="text-[#47280e] font-bold">Day of Week:</span> <span className="text-gray-700">One-hot encoded vectors</span></span>
               </div>
               <div className="flex gap-2">
                 <span className="text-[#DEAE16]">→</span>
-                <span><span className="text-white font-bold">Weather:</span> <span className="text-gray-200">Categorical coefficients</span></span>
+                <span><span className="text-[#47280e] font-bold">Weather:</span> <span className="text-gray-700">Categorical coefficients</span></span>
               </div>
               <div className="flex gap-2">
                 <span className="text-[#DEAE16]">→</span>
-                <span><span className="text-white font-bold">Logic:</span> <span className="text-gray-200">Base Bias + Weighted Sum</span></span>
+                <span><span className="text-[#47280e] font-bold">Output:</span> <span className="text-gray-700">Daily production targets</span></span>
               </div>
             </div>
           </div>
 
           {/* Risk Model - Right */}
-          <div className="bg-white text-black p-12 md:p-16">
+          <div className="bg-[#47280e] text-white p-12 md:p-16">
             <div className="flex items-center gap-4 mb-6">
-              <span className="text-5xl md:text-7xl font-bold tracking-tight text-[#47280e]">02</span>
+              <span className="text-5xl md:text-7xl font-bold tracking-tight text-[#DEAE16]">02</span>
               <div>
                 <span className="text-sm uppercase tracking-widest text-gray-500 block">Core</span>
                 <h3 className="text-2xl md:text-3xl font-bold uppercase tracking-tight">
@@ -199,21 +199,21 @@ export default function TheBaker() {
                 </h3>
               </div>
             </div>
-            <div className="bg-black/5 border border-black/10 p-4 font-mono text-black text-base md:text-lg mb-6">
+            <div className="bg-[#DEAE16]/10 border border-[#DEAE16]/30 p-4 font-mono text-[#DEAE16] text-base md:text-lg mb-6">
               Goal: Quantify Inventory Risk
             </div>
             <div className="space-y-3 text-sm md:text-base">
               <div className="flex gap-2">
                 <span className="text-[#DEAE16]">→</span>
-                <span><span className="font-bold">Active-Day Filtering:</span> <span className="text-gray-600">Isolates production {'>'} 0</span></span>
+                <span><span className="font-bold">Active-Day Filtering:</span> <span className="text-gray-200">Isolates production {'>'} 0</span></span>
               </div>
               <div className="flex gap-2">
                 <span className="text-[#DEAE16]">→</span>
-                <span><span className="font-bold">Risk Score:</span> <span className="text-gray-600">Avg Loss per Active Day</span></span>
+                <span><span className="font-bold">Risk Score:</span> <span className="text-gray-200">Average loss per active day</span></span>
               </div>
               <div className="flex gap-2">
                 <span className="text-[#DEAE16]">→</span>
-                <span><span className="font-bold">Insight:</span> <span className="text-gray-600">Waste = operational variance</span></span>
+                <span><span className="font-bold">Focus:</span> <span className="text-gray-200">Ideentifies high-risk, high-waste items</span></span>
               </div>
             </div>
           </div>

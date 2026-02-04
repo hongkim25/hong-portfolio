@@ -5,20 +5,19 @@ import FadeIn from '@/components/FadeIn';
 
 export default function Home() {
   return (
-    <main className="h-screen w-full flex flex-col justify-start items-start pt-20 px-4 md:px-4 text-left bg-[#6017B3] text-white overflow-hidden relative">
+    <main className="h-screen w-full flex flex-col justify-start items-start pt-32 px-4 md:px-4 text-left bg-[#6017B3] text-white overflow-hidden relative">
       <motion.div 
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}
         transition={{ duration: 0.5 }}
-        className="flex gap-6 text-xl md:text-3xl leading-[1.5] font-medium text-gray-100 z-10">
+        className="flex gap-6 text-2xl md:text-5xl leading-[1.5] font-medium text-gray-100 z-10">
         <span>HONG KIM, SOFTWARE ENGINEER <br /><br />
-        <p className="text-sm md:text-lg leading-[1.5] mb-1">
+        <p className="text-sm md:text-xl leading-[2] mb-3">
         I SHIP PRODUCTION SOFTWARE FOR REAL OPERATIONS. <br />
         THE BAKER PROJECT: Loyalty, reservations, and demand forecasting for a bakery.<br /><br /></p>
-        <p className="text-sm md:text-lg leading-[1.3] mb-3">
-          If you have 60 seconds, please check:<br />
-          1) THE BAKER: See my project (a live project for a real bakery)<br />
-          2) ABOUT: Check my background (business → data → engineering)<br />
+        <p className="text-sm md:text-xl leading-[1.3] mb-3">
+          1) ABOUT: Check my background (business → data → engineering)<br />
+          2) THE BAKER: See my project (live platform managing bakery operations)<br />
           3) TLTP: See my personal project to transition into a SWE</p></span>
       </motion.div>
 

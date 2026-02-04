@@ -16,7 +16,7 @@ export default function Footer() {
       </h2>
 
       <div className="flex flex-col items-center">
-        <p className="text-black text-sm sm:text-base">
+        <p className="text-gray-100 text-sm sm:text-base">
           © 2026 Honggyun Kim
         </p>
       </div>

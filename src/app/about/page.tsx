@@ -9,7 +9,7 @@ export default function About() {
         <h1 className="text-5xl md:text-8xl font-bold leading-none mb-6">
           <span className="font-serif italic font-normal">The Strategist</span>
           <br />
-          <span className="text-gray-500 tracking-tighter ">Turned Engineer.</span>
+          <span className="text-gray-500 tracking-tighter">turned Engineer.</span>
         </h1>
         <p className="text-xl md:text-2xl max-w-5xl mx-auto opacity-80">
           I build production software that turns business problems into measurable outcomes.
@@ -17,7 +17,7 @@ export default function About() {
       </div>
 
       {/* 2. CTA BUTTONS - No FadeIn to prevent flash */}
-      <div className="w-full py-12 px-8">
+      <div className="w-full py-4 px-8">
         <div className="flex flex-wrap gap-3 justify-center">
           <a href="/cv.pdf" target="_blank"
              className="px-4 py-4 bg-[#015b4e] text-white text-lg font-bold uppercase tracking-wider hover:bg-[#A6F7E3] hover:text-black transition-colors">
@@ -48,13 +48,13 @@ export default function About() {
             </h2>
             <div className="space-y-6 text-lg md:text-xl text-gray-700 leading-relaxed">
               <p>
-                B.A. in Economics. Master's in International Business from <span className="font-bold text-black">Stockholm School of Economics</span>.
+                M.Sc in International Business from <span className="font-bold text-black">Stockholm School of Economics</span>.
               </p>
               <p>
                 What pushed me toward software engineering was simple: I wanted to build the systems that turn insight into action.
               </p>
               <p>
-                I'm now moving out of my comfort zone to become an engineer who can design, implement, and ship production software — focusing on clean UX and measurable impact.
+                I left my analyst path to become an engineer who designs, implements, and ships production software — focusing on clean UX and measurable impact.
               </p>
             </div>
           </div>
@@ -112,14 +112,14 @@ export default function About() {
         <div className="w-full bg-white text-black py-20 px-8">
           <div className="max-w-4xl mx-auto text-center">
             <span className="text-sm uppercase tracking-widest text-gray-500 block mb-4">Experience</span>
-            <h2 className="text-3xl md:text-5xl font-bold uppercase tracking-tighter mb-8">
+            <h2 className="text-3xl md:text-5xl font-bold uppercase tracking-[-.035em] mb-8">
               Data Analytics in Fashion Retail
             </h2>
             <p className="text-lg md:text-xl text-gray-700 leading-relaxed mb-8">
-              I worked on customer and business problems in global fashion retail, helping make business decisions with SQL and BI tools.
+              I analyzed loyalty data at H&M and customer behavior at COS to drive business decisions to generate insights.
             </p>
             <p className="text-xl md:text-2xl font-bold">
-              Now I'm focused on building the systems behind those decisions.
+              Now, I build the systems behind those decisions.
             </p>
           </div>
         </div>
@@ -161,33 +161,35 @@ export default function About() {
           <div className="text-center mb-12">
             <span className="text-sm uppercase tracking-widest text-gray-500 block mb-2">Communication</span>
             <h3 className="text-4xl md:text-6xl font-bold uppercase tracking-tighter">
-              Languages
+              Languages & Experiences
             </h3>
           </div>
           <div className="flex flex-wrap justify-center gap-4 max-w-5xl mx-auto">
-            <div className="px-8 py-4 bg-black text-white">
+            <div className="px-5 py-4 bg-black text-white">
               <span className="font-bold text-lg">Korean</span>
               <span className="text-gray-400 ml-2">Native</span>
             </div>
-            <div className="px-8 py-4 bg-black text-white">
+            <div className="px-5 py-4 bg-black text-white">
               <span className="font-bold text-lg">English</span>
               <span className="text-gray-400 ml-2">Professional</span>
             </div>
-            <div className="px-8 py-4 bg-gray-200 text-black">
+            <div className="px-5 py-4 bg-gray-200 text-black">
               <span className="font-bold text-lg">French</span>
               <span className="text-gray-500 ml-2">B2</span>
             </div>
-            <div className="px-8 py-4 bg-gray-200 text-black">
+            <div className="px-5 py-4 bg-gray-200 text-black">
               <span className="font-bold text-lg">Spanish</span>
               <span className="text-gray-500 ml-2">B1</span>
             </div>
-            <div className="px-8 py-4 bg-gray-100 text-black">
+            <div className="px-5 py-4 bg-gray-100 text-black">
               <span className="font-bold text-lg">Swedish</span>
               <span className="text-gray-500 ml-2">Basic</span>
             </div>
           </div>
-          <p className="text-center text-gray-500 mt-8 text-lg">
-            Lived and worked in France, Belgium, Spain, Hong Kong, Sweden, and the UK.
+          <p className="text-center text-gray-800 mt-8 text-lg">
+            Born and raised in South Korea. <br />
+            Studied in Sweden, Spain, France, and Hong Kong.<br /> 
+            Worked in Belgium, Sweden, and the UK.
           </p>
         </div>
       </FadeIn>
@@ -217,7 +219,7 @@ export default function About() {
               <span className="text-6xl md:text-8xl font-bold block mb-2">200+</span>
               <span className="text-xl font-bold uppercase tracking-wide block mb-4">GQ Magazines</span>
               <p className="text-gray-400">
-                Subscribed for 15 years. My bookshelf is a timeline of aesthetics. It fuels my obsession with "Frontend Beauty."
+                Subscribed for 15 years. My bookshelf is a timeline of aesthetics. It fuels my obsession with product quality and design precision.
               </p>
             </div>
 
