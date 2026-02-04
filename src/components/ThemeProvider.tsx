@@ -30,7 +30,7 @@ const themeColors: Record<string, PageTheme> = {
     footerText: "#ffffff",
   },
   "/the-baker": {
-    bg: "#f4ece7",
+    bg: "#f9f7f2",
     text: "#350505",
     navBg: "#6b3405",
     navText: "#ffffff",

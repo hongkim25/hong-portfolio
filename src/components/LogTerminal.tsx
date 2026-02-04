@@ -424,136 +424,111 @@ WEEK 1
 
 1 AUG 2025 - It was the first day of the project.`;
 
-// Parse log data into structured format
-interface LogEntry {
-  date: string;
-  content: string;
-}
-
-interface WeekData {
-  week: string;
-  entries: LogEntry[];
-}
-
-function parseLogData(data: string): { header: string; weeks: WeekData[] } {
-  const lines = data.split('\n');
-  let header = '';
-  const weeks: WeekData[] = [];
-  let currentWeek: WeekData | null = null;
-  let currentEntry: LogEntry | null = null;
-
-  for (let i = 0; i < lines.length; i++) {
-    const line = lines[i];
-
-    // Header lines (before first WEEK)
-    if (!currentWeek && !line.startsWith('WEEK')) {
-      header += line + '\n';
-      continue;
-    }
-
-    // Week header
-    if (line.startsWith('WEEK')) {
-      if (currentEntry && currentWeek) {
-        currentWeek.entries.push(currentEntry);
-      }
-      if (currentWeek) {
-        weeks.push(currentWeek);
-      }
-      currentWeek = { week: line, entries: [] };
-      currentEntry = null;
-      continue;
-    }
-
-    // Date entry (starts with day number or month abbreviation pattern)
-    const dateMatch = line.match(/^(\d{1,2}\s+\w{3}\s+\d{4})\s*-\s*(.*)/);
-    if (dateMatch && currentWeek) {
-      if (currentEntry) {
-        currentWeek.entries.push(currentEntry);
-      }
-      currentEntry = { date: dateMatch[1], content: dateMatch[2] };
-      continue;
-    }
-
-    // Continuation of current entry
-    if (currentEntry && line.trim()) {
-      currentEntry.content += '\n' + line;
-    }
-  }
-
-  // Push last entry and week
-  if (currentEntry && currentWeek) {
-    currentWeek.entries.push(currentEntry);
-  }
-  if (currentWeek) {
-    weeks.push(currentWeek);
-  }
-
-  return { header: header.trim(), weeks };
-}
-
 export default function LogTerminal() {
-  const { header, weeks } = parseLogData(LOG_DATA);
+  const lines = LOG_DATA.split('\n');
+
+  // Style function for different line types
+  const getLineStyle = (line: string) => {
+    let color = '#86efac'; // default green
+    let fontSize = '14px';
+    let fontWeight: 'normal' | 'bold' = 'normal';
+    let marginTop = '0';
+    let marginBottom = '0';
+
+    if (line.startsWith('THE LIFE')) {
+      color = '#22c55e';
+      fontSize = '20px';
+      fontWeight = 'bold';
+      marginBottom = '16px';
+    } else if (line.startsWith('WEEK')) {
+      color = '#4ade80';
+      fontSize = '18px';
+      fontWeight = 'bold';
+      marginTop = '24px';
+      marginBottom = '8px';
+    } else if (line.startsWith('[')) {
+      color = '#facc15';
+      fontSize = '16px';
+      fontWeight = 'bold';
+    } else if (line.startsWith('---')) {
+      color = '#166534';
+      marginBottom = '16px';
+    }
+
+    return { color, fontSize, fontWeight, marginTop, marginBottom };
+  };
 
   return (
-    <div className="w-full max-w-4xl mx-auto">
+    <div className="w-full" style={{ textAlign: 'left' }}>
 
-      {/* Header */}
-      <div className="mb-12 pb-8 border-b border-gray-800">
-        <h3 className="text-2xl md:text-3xl font-bold text-white mb-4 tracking-tight">
-          THE LIFE TRANSITION PROJECT
-        </h3>
-        <p className="text-gray-400 text-lg">
-          1 August 2025 — 30 April 2026
-        </p>
-        <p className="text-gray-500 mt-2">
-          39 Weeks • 273 Days • Zero Days Off
-        </p>
+      {/* Terminal Header */}
+      <div style={{
+        backgroundColor: '#000000',
+        padding: '16px',
+        display: 'flex',
+        alignItems: 'center',
+        gap: '8px',
+        borderBottom: '2px solid #22c55e'
+      }}>
+        <div style={{ width: '16px', height: '16px', backgroundColor: '#ef4444' }} />
+        <div style={{ width: '16px', height: '16px', backgroundColor: '#eab308' }} />
+        <div style={{ width: '16px', height: '16px', backgroundColor: '#22c55e' }} />
+        <span style={{ marginLeft: '16px', color: '#22c55e', fontFamily: 'monospace', fontWeight: 'bold', fontSize: '18px' }}>
+          hong@tltp: ~/daily-logs
+        </span>
       </div>
 
-      {/* Weeks */}
-      <div className="space-y-12">
-        {weeks.map((weekData, weekIndex) => (
-          <div key={weekIndex} className="group">
-            {/* Week Header */}
-            <div className="flex items-center gap-4 mb-6">
-              <span className="text-blue-500 font-bold text-sm tracking-widest uppercase">
-                {weekData.week}
-              </span>
-              <div className="flex-1 h-px bg-gray-800 group-hover:bg-blue-500/50 transition-colors" />
+      {/* Terminal Content */}
+      <div
+        style={{
+          backgroundColor: '#000000',
+          border: '2px solid #22c55e',
+          borderTop: 'none',
+          padding: '24px',
+          fontFamily: 'monospace',
+          fontSize: '14px',
+          overflowY: 'auto',
+          height: '70vh',
+        }}
+      >
+        {/* Command */}
+        <div style={{ color: '#22c55e', fontSize: '18px', fontWeight: 'bold', marginBottom: '24px' }}>
+          $ cat tltp_history.log
+        </div>
+
+        {/* All Lines - Static Display */}
+        {lines.map((line, index) => {
+          const style = getLineStyle(line);
+          return (
+            <div
+              key={index}
+              style={{
+                color: style.color,
+                fontSize: style.fontSize,
+                fontWeight: style.fontWeight,
+                marginTop: style.marginTop,
+                marginBottom: style.marginBottom,
+                lineHeight: '1.6',
+                minHeight: '1em',
+              }}
+            >
+              {line || '\u00A0'}
             </div>
+          );
+        })}
 
-            {/* Entries */}
-            <div className="space-y-4 pl-4 border-l border-gray-800 group-hover:border-gray-700 transition-colors">
-              {weekData.entries.map((entry, entryIndex) => (
-                <div
-                  key={entryIndex}
-                  className="relative pl-6"
-                >
-                  {/* Dot */}
-                  <div className="absolute left-0 top-2 w-2 h-2 bg-gray-700 group-hover:bg-blue-500 transition-colors -translate-x-[calc(50%+1px)]" />
-
-                  {/* Date */}
-                  <span className="text-white font-medium text-sm block mb-1">
-                    {entry.date}
-                  </span>
-
-                  {/* Content */}
-                  <p className="text-gray-400 text-sm leading-relaxed">
-                    {entry.content}
-                  </p>
-                </div>
-              ))}
-            </div>
-          </div>
-        ))}
+        {/* Done cursor */}
+        <div style={{ color: '#22c55e', fontSize: '18px', fontWeight: 'bold', marginTop: '32px' }}>
+          $ <span style={{ animation: 'blink 1s infinite' }}>_</span>
+        </div>
       </div>
 
-      {/* Footer */}
-      <div className="mt-16 pt-8 border-t border-gray-800 text-center">
-        <p className="text-gray-500 text-sm">
-          End of log. The grind continues.
-        </p>
-      </div>
+      <style jsx>{`
+        @keyframes blink {
+          0%, 50% { opacity: 1; }
+          51%, 100% { opacity: 0; }
+        }
+      `}</style>
     </div>
   );
 }

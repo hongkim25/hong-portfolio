@@ -5,13 +5,13 @@ import Link from 'next/link';
 export default function Footer() {
   return (
     <footer className="w-full bg-[var(--footer-bg)] text-[var(--footer-text)]
-      py-6 px-4 sm:py-10 sm:px-8
-      flex flex-col items-center text-center transition-colors duration-1000 ease-in-out">
+      py-4 px-4 sm:py-10 sm:px-8
+      flex flex-col items-center text-center transition-colors duration-750 ease-in-out">
       
       <h2 className="font-display font-bold tracking-tighter uppercase
         leading-[0.9]
         text-[clamp(40px,8vw,80px)]
-        mb-6 sm:mb-12">
+        mb-3 sm:mb-3">
         Let's<br />Build
       </h2>
 

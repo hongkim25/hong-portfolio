@@ -4,170 +4,252 @@ export default function TheBaker() {
   return (
     <div className="min-h-screen w-full bg-[var(--page-bg)] text-[var(--page-text)]">
 
-      {/* 1. HERO - Full width */}
-      <FadeIn>
-        <div className="w-full py-20 px-8 text-center">
-          <span className="font-sans text-[#DEAE16] tracking-wide uppercase font-bold text-lg md:text-xl fomb-4 block">
-            Java + Spring Boot Project
-          </span>
-          <h1 className="text-5xl md:text-8xl font-bold uppercase tracking-tighter leading-none mb-6">
-            The Baker
-          </h1>
-          <p className="text-xl text-gray-500 md:text-3xl">
-            Smart Retail Operations Platform
-          </p>
-          <p className="text-xl md:text-2xl mb-8">
-          A production platform for a real bakery built to improve retention and reduce leftovers through better daily decisions.
-          </p>
+      {/* 1. HERO - No FadeIn to prevent flash */}
+      <div className="w-full py-20 px-8 text-center">
+        <span className="font-sans text-[#DEAE16] tracking-wide uppercase font-bold text-lg md:text-xl block mb-4">
+          Smart Retail Operations Platform
+        </span>
+        <h1 className="text-6xl md:text-9xl font-bold uppercase tracking-tighter leading-none mb-8">
+          The Baker
+        </h1>
+        <p className="text-lg md:text-2xl max-w-4xl mx-auto font-serif italic opacity-80">
+          A production platform for a real bakery — built to improve retention and reduce leftovers through better daily decisions.
+        </p>
+      </div>
 
-          <div className="max-w-6xl mx-auto">
-            <p className="text-lg md:text-xl">
-              Customer side: loyalty, real-time menu visibility, and reservations.
+      {/* 2. DUAL FEATURES - No FadeIn to prevent flash */}
+      <div className="w-full grid grid-cols-1 md:grid-cols-2 gap-0">
+        <div className="bg-white text-black p-12 md:p-16">
+          <span className="text-sm uppercase tracking-widest opacity-60 block mb-2">For Customers</span>
+          <h3 className="text-3xl md:text-4xl font-bold uppercase tracking-tight mb-4">
+            Loyalty + Visibility
+          </h3>
+          <p className="text-lg md:text-xl">
+            Real-time menu visibility, reservations, and a points system that rewards repeat visits.
+          </p>
+        </div>
+        <div className="bg-[#47280e] text-white p-12 md:p-16">
+          <span className="text-sm uppercase tracking-widest opacity-60 block mb-2">For Staff</span>
+          <h3 className="text-3xl md:text-4xl font-bold uppercase tracking-tight mb-4">
+            AI Dashboard
+          </h3>
+          <p className="text-lg md:text-xl">
+            Production recommendations using sales history + weather signals. Less guesswork, less waste.
+          </p>
+        </div>
+      </div>
+
+      {/* 3. PROOF SECTION - The Numbers */}
+        <div className="w-full text-black py-20 px-8">
+          <div className="text-center mb-12">
+            <span className="text-sm uppercase tracking-widest text-gray-500 block mb-2">First Week Live</span>
+            <h2 className="text-4xl md:text-6xl font-bold uppercase tracking-tighter">
+              Early Signals
+            </h2>
+          </div>
+
+          <div className="grid grid-cols-2 md:grid-cols-4 gap-8 max-w-5xl mx-auto mb-12">
+            <div className="text-center">
+              <span className="block text-5xl md:text-7xl font-bold font-mono text-[#47280e]">70%</span>
+              <span className="text-sm md:text-base text-gray-600 uppercase tracking-wide">Opt-in Rate</span>
+            </div>
+            <div className="text-center">
+              <span className="block text-5xl md:text-7xl font-bold font-mono text-[#47280e]">200+</span>
+              <span className="text-sm md:text-base text-gray-600 uppercase tracking-wide">Real Customers</span>
+            </div>
+            <div className="text-center">
+              <span className="block text-5xl md:text-7xl font-bold font-mono text-[#47280e]">300+</span>
+              <span className="text-sm md:text-base text-gray-600 uppercase tracking-wide">Point Records</span>
+            </div>
+            <div className="text-center">
+              <span className="block text-5xl md:text-7xl font-bold font-mono text-[#47280e]">100+</span>
+              <span className="text-sm md:text-base text-gray-600 uppercase tracking-wide">Repeat Visits</span>
+            </div>
+          </div>
+
+          <div className="max-w-3xl mx-auto text-center border-t border-black/10 pt-8">
+            <p className="text-base md:text-lg text-gray-700 leading-relaxed">
+              All numbers from <span className="font-bold">production database records</span> — actual purchases and point issuance, not demo data.
+              The core goal is retention, and repeat visits showed up immediately.
             </p>
-            <p className="text-lg md:text-xl mb-10">
-              Staff side: a dashboard that recommends production levels using sales history + weather signals.
-            </p>
-            <p className="text-lg md:text-xl mb-2">
-              Early signals (first week) <br />
-              - ~70% adoption among in-store customers (opt-in) <br />
-              - 200+ real customers served <br />
-              - 300+ loyalty point records captured in SQL <br />
-              - Early repeats: several customers returned and earned points 2+ times within days
-            </p>
-            <p className="text-lg md:text-xl mb-10">
-            ~70% of purchasing customers opted in to loyalty, with 200 unique customers and 300+ point-issuance transactions recorded in production SQL (≈100 from repeat visits).
-            This matters because the core goal is retention — and repeat visits showed up immediately. <br />
-            All numbers above are taken from production database records (actual purchases and point issuance), not demo data or vanity sign-ups.
-            </p>
-          </div>  
-          <div className="flex gap-4 justify-center">
-            <a href="https://thebaker.cc" target="_blank" rel="noopener noreferrer" className="px-6 py-3 border-2 border-current text-black text-lg md:text-xl font-bold hover:bg-white/100 transition-colors">
-              Visit Live Site ↗
+          </div>
+        </div>
+
+      {/* 4. CTA BUTTONS */}
+        <div className="w-full bg-[#6B4423] py-16 px-8">
+          <div className="flex flex-col md:flex-row gap-4 justify-center items-center">
+            <a href="https://thebaker.cc" target="_blank" rel="noopener noreferrer"
+               className="px-10 py-5 bg-white text-black text-xl md:text-2xl font-bold uppercase tracking-wider hover:bg-white transition-colors">
+              Visit Live Site
             </a>
-            <a href="https://github.com/hongkim25" target="_blank" rel="noopener noreferrer" className="px-6 py-3 border-2 border-current text-black text-lg md:text-xl font-bold hover:bg-white/100 transition-colors">
+            <a href="https://github.com/hongkim25" target="_blank" rel="noopener noreferrer"
+               className="px-10 py-5 bg-white text-black  text-xl md:text-2xl font-bold uppercase tracking-wider hover:bg-white hover:text-black transition-colors">
               View GitHub
             </a>
           </div>
+        </div>
 
-          {/* Screenshots/GIFs - Add your images here */}
-          <div className="mt-16 w-full">
-            {/* Replace this placeholder with your actual images/gifs */}
-            {/* Example: <img src="/baker-demo.gif" alt="The Baker Demo" className="w-full" /> */}
-            <div className="border-2 border-dashed border-current/30 p-20 text-xl opacity-50">
-              Screenshots / GIFs go here
-            </div>
+      {/* 5. Screenshots Placeholder */}
+        <div className="w-full bg-[var(--page-bg)] py-16 px-8">
+          <div className="border-2 border-dashed border-current/30 p-20 text-xl opacity-50 text-center">
+            Screenshots / GIFs go here
           </div>
         </div>
-      </FadeIn>
 
-      {/* 2. PROBLEM & SOLUTION - Two columns */}
+      {/* 6. PROBLEM & SOLUTION - Two columns */}
       <FadeIn>
-        <div className="w-full grid grid-cols-1 md:grid-cols-2 gap-4 p-4">
+        <div className="w-full grid grid-cols-1 md:grid-cols-2 gap-0">
           {/* Problem - Left */}
-          <div className="bg-white text-black p-8 md:p-12 text-center">
-            <h3 className="text-3xl md:text-5xl font-bold uppercase tracking-tight mb-6">
-              The Problem
+          <div className="bg-[#47280e] text-white p-12 md:p-16">
+            <span className="text-sm uppercase tracking-widest text-red-500 block mb-4">The Problem</span>
+            <h3 className="text-2xl md:text-3xl font-bold uppercase tracking-tight mb-8 leading-none">
+              Two Critical Failures
             </h3>
-            <p className="text-lg md:text-xl mb-6">
-              Small bakeries face two critical failures:
-            </p>
-            <p className="text-lg md:text-xl mb-3">
-              <span className="font-bold">1. Customer Friction</span> — Unsure if open, no inventory visibility, wasted trips.
-            </p>
-            <p className="text-lg md:text-xl">
-              <span className="font-bold">2. Operational Waste</span> — Over-production due to lack of data.
-            </p>
+            <div className="space-y-6">
+              <div className="border-l-4 border-red-500 pl-6">
+                <span className="font-bold text-xl block mb-1">Customer Friction</span>
+                <p className="text-gray-400">Unsure if open, no inventory visibility, wasted trips.</p>
+              </div>
+              <div className="border-l-4 border-red-500 pl-6">
+                <span className="font-bold text-xl block mb-1">Operational Waste</span>
+                <p className="text-gray-400">Over-production due to lack of data.</p>
+              </div>
+            </div>
           </div>
 
           {/* Solution - Right */}
-          <div className="bg-white text-black p-8 md:p-12 text-center">
-            <h3 className="text-3xl md:text-5xl font-bold uppercase tracking-tight mb-6">
-              The Solution
+          <div className="bg-white text-black p-12 md:p-16">
+            <span className="text-sm uppercase tracking-widest text-[#DEAE16] block mb-4">The Solution</span>
+            <h3 className="text-2xl md:text-3xl font-bold uppercase tracking-tight mb-8 leading-none">
+              Unified Platform
             </h3>
-            <p className="text-lg md:text-xl mb-6">
-              A unified Hybrid Monolith platform:
-            </p>
-            <p className="text-lg md:text-xl mb-3">
-              <span className="font-bold">Customer Portal</span> — Real-time PWA for live stock visibility and reservations.
-            </p>
-            <p className="text-lg md:text-xl">
-              <span className="font-bold">Staff Dashboard</span> — AI-assisted decision support recommending daily production levels.
-            </p>
+            <div className="space-y-6">
+              <div className="border-l-4 border-[#DEAE16] pl-6">
+                <span className="font-bold text-xl block mb-1">Customer Portal</span>
+                <p className="text-gray-600">Real-time PWA for live stock visibility and reservations.</p>
+              </div>
+              <div className="border-l-4 border-[#DEAE16] pl-6">
+                <span className="font-bold text-xl block mb-1">Staff Dashboard</span>
+                <p className="text-gray-600">AI-assisted decision support for daily production levels.</p>
+              </div>
+            </div>
           </div>
         </div>
       </FadeIn>
 
-      {/* 3. DUAL-CORE INTRO - Full width */}
-      <FadeIn>
-        <div className="w-full py-20 px-8 text-center">
-          <h2 className="text-3xl md:text-5xl font-bold uppercase tracking-tighter leading-none mb-4">
-            Dual-Core Prediction Logic
+      {/* 7. DUAL-CORE INTRO - Full width */}
+        <div className="w-full text-black py-20 px-8 text-center">
+          <span className="text-sm uppercase tracking-widest opacity-60 block mb-4">Under The Hood</span>
+          <h2 className="text-4xl md:text-6xl font-bold uppercase tracking-tighter leading-none mb-4">
+            Dual-Core<br />Prediction
           </h2>
-          <p className="text-xl md:text-2xl">
-            Two models working together to optimize production decisions.
+          <p className="text-xl md:text-2xl max-w-3xl mx-auto">
+            Two models working in parallel to optimize production decisions.
           </p>
         </div>
-      </FadeIn>
 
-      {/* 4. DEMAND & RISK MODELS - Two columns */}
+      {/* 8. DEMAND & RISK MODELS - Two columns */}
       <FadeIn>
-        <div className="w-full grid grid-cols-1 md:grid-cols-2 gap-4 p-4">
+        <div className="w-full grid grid-cols-1 md:grid-cols-2 gap-0">
           {/* Demand Model - Left */}
-          <div className="bg-white text-black p-8 md:p-12 text-center">
-            <span className="text-sm uppercase tracking-widest block mb-2">Core 1</span>
-            <h3 className="text-3xl md:text-5xl font-bold uppercase tracking-tight mb-6">
-              Demand Model
-            </h3>
-            <p className="text-lg md:text-xl mb-6">
+          <div className="bg-[#47280e] text-white p-12 md:p-16">
+            <div className="flex items-center gap-4 mb-6">
+              <span className="text-5xl md:text-7xl font-bold tracking-tight text-[#DEAE16]">01</span>
+              <div>
+                <span className="text-sm uppercase tracking-widest text-gray-500 block">Core</span>
+                <h3 className="text-2xl md:text-3xl font-bold uppercase tracking-tight">
+                  Demand Model
+                </h3>
+              </div>
+            </div>
+            <p className="text-lg text-gray-400 mb-6">
               Dynamic Regression — Predict Sales Velocity
             </p>
-            <div className="bg-black/20 p-4 font-mono text-base md:text-lg mb-6">
+            <div className="bg-[#DEAE16]/10 border border-[#DEAE16]/30 p-4 font-mono text-[#DEAE16] text-base md:text-lg mb-6">
               y = β0 + β1(x1) + ... + βn(xn)
             </div>
-            <div className="text-base md:text-lg space-y-2">
-              <p><span className="font-bold">Day of Week:</span> One-hot encoded vectors</p>
-              <p><span className="font-bold">Weather:</span> Categorical mapping to coefficients</p>
-              <p><span className="font-bold">Logic:</span> Base Bias + Weighted Coefficients</p>
+            <div className="space-y-3 text-sm md:text-base">
+              <div className="flex gap-2">
+                <span className="text-[#DEAE16]">→</span>
+                <span><span className="text-white font-bold">Day of Week:</span> <span className="text-gray-400">One-hot encoded vectors</span></span>
+              </div>
+              <div className="flex gap-2">
+                <span className="text-[#DEAE16]">→</span>
+                <span><span className="text-white font-bold">Weather:</span> <span className="text-gray-400">Categorical coefficients</span></span>
+              </div>
+              <div className="flex gap-2">
+                <span className="text-[#DEAE16]">→</span>
+                <span><span className="text-white font-bold">Logic:</span> <span className="text-gray-400">Base Bias + Weighted Sum</span></span>
+              </div>
             </div>
           </div>
 
           {/* Risk Model - Right */}
-          <div className="bg-white text-black p-8 md:p-12 text-center">
-            <span className="text-sm uppercase tracking-widest block mb-2">Core 2</span>
-            <h3 className="text-3xl md:text-5xl font-bold uppercase tracking-tight mb-6">
-              Risk Model
-            </h3>
-            <p className="text-lg md:text-xl mb-6">
+          <div className="bg-white text-black p-12 md:p-16">
+            <div className="flex items-center gap-4 mb-6">
+              <span className="text-5xl md:text-7xl font-bold tracking-tight text-[#47280e]">02</span>
+              <div>
+                <span className="text-sm uppercase tracking-widest text-gray-500 block">Core</span>
+                <h3 className="text-2xl md:text-3xl font-bold uppercase tracking-tight">
+                  Risk Model
+                </h3>
+              </div>
+            </div>
+            <p className="text-lg text-gray-600 mb-6">
               Sparse Data Handling — Quantify Inventory Risk
             </p>
-            <div className="bg-black/20 p-4 font-mono text-base md:text-lg mb-6">
+            <div className="bg-black/5 border border-black/10 p-4 font-mono text-black text-base md:text-lg mb-6">
               Challenge: Zero-Inflated Data
             </div>
-            <div className="text-base md:text-lg space-y-2">
-              <p><span className="font-bold">Active-Day Filtering:</span> Isolates production {'>'} 0</p>
-              <p><span className="font-bold">Risk Score:</span> Avg Loss per Active Day</p>
-              <p><span className="font-bold">Insight:</span> Waste is operational variance</p>
+            <div className="space-y-3 text-sm md:text-base">
+              <div className="flex gap-2">
+                <span className="text-[#DEAE16]">→</span>
+                <span><span className="font-bold">Active-Day Filtering:</span> <span className="text-gray-600">Isolates production {'>'} 0</span></span>
+              </div>
+              <div className="flex gap-2">
+                <span className="text-[#DEAE16]">→</span>
+                <span><span className="font-bold">Risk Score:</span> <span className="text-gray-600">Avg Loss per Active Day</span></span>
+              </div>
+              <div className="flex gap-2">
+                <span className="text-[#DEAE16]">→</span>
+                <span><span className="font-bold">Insight:</span> <span className="text-gray-600">Waste = operational variance</span></span>
+              </div>
             </div>
           </div>
         </div>
       </FadeIn>
 
-      {/* 5. TECH STACK - Full width */}
-      <FadeIn>
-        <div className="w-full py-16 px-8 text-center">
-          <h3 className="text-3xl md:text-5xl font-bold uppercase tracking-tighter mb-8">
-            Tech Stack
-          </h3>
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-4 text-lg md:text-xl">
-            <p><span className="opacity-50">Backend:</span> Java 17, Spring Boot 3.2</p>
-            <p><span className="opacity-50">Data:</span> Python 3.x, Pandas, Scikit-Learn</p>
-            <p><span className="opacity-50">Frontend:</span> Thymeleaf + TailwindCSS</p>
-            <p><span className="opacity-50">Database:</span> H2 / PostgreSQL</p>
-            <p><span className="opacity-50">DevOps:</span> GitHub Actions → Render</p>
+      {/* 9. TECH STACK - Full width */}
+        <div className="w-full py-20 px-8">
+          <div className="text-center mb-12">
+            <span className="text-sm uppercase tracking-widest text-gray-500 block mb-2">Built With</span>
+            <h3 className="text-4xl md:text-6xl text-gray-800 font-bold uppercase tracking-tighter">
+              Tech Stack
+            </h3>
+          </div>
+          <div className="grid grid-cols-2 md:grid-cols-5 gap-4 max-w-6xl mx-auto">
+            <div className="text-center p-6 border border-white/10 hover:border-[#DEAE16] transition-colors">
+              <span className="block text-[#DEAE16] text-2xl md:text-3xl font-bold mb-2">Java 17</span>
+              <span className="text-gray-500 text-sm uppercase tracking-wide">Backend</span>
+            </div>
+            <div className="text-center p-6 border border-white/10 hover:border-[#DEAE16] transition-colors">
+              <span className="block text-[#DEAE16] text-2xl md:text-3xl font-bold mb-2">Spring</span>
+              <span className="text-gray-500 text-sm uppercase tracking-wide">Boot 3.2</span>
+            </div>
+            <div className="text-center p-6 border border-white/10 hover:border-[#DEAE16] transition-colors">
+              <span className="block text-[#DEAE16] text-2xl md:text-3xl font-bold mb-2">Python</span>
+              <span className="text-gray-500 text-sm uppercase tracking-wide">ML Pipeline</span>
+            </div>
+            <div className="text-center p-6 border border-white/10 hover:border-[#DEAE16] transition-colors">
+              <span className="block text-[#DEAE16] text-2xl md:text-3xl font-bold mb-2">PostgreSQL</span>
+              <span className="text-gray-500 text-sm uppercase tracking-wide">Database</span>
+            </div>
+            <div className="text-center p-6 border border-white/10 hover:border-[#DEAE16] transition-colors">
+              <span className="block text-[#DEAE16] text-2xl md:text-3xl font-bold mb-2">Render</span>
+              <span className="text-gray-500 text-sm uppercase tracking-wide">Deployment</span>
+            </div>
           </div>
         </div>
-      </FadeIn>
-
     </div>
   );
 }
