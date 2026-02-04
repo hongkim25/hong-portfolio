@@ -22,7 +22,7 @@ export default function About() {
         <div className="flex flex-wrap gap-3 justify-center">
           <a href="/Hong_Kim_Backend_Engineer_CV.pdf" target="_blank"
              className="px-4 py-4 bg-[#015b4e] text-white text-lg font-bold uppercase tracking-wider hover:bg-[#A6F7E3] hover:text-black transition-colors">
-            CV
+            View CV
           </a>
           <a href="https://www.linkedin.com/in/honggyun-kim/" target="_blank" rel="noopener noreferrer"
              className="px-4 py-4 bg-[#015b4e] text-white text-lg font-bold uppercase tracking-wider hover:bg-[#A6F7E3] hover:text-black transition-colors">
