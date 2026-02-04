@@ -16,9 +16,9 @@ export default function Home() {
         I SHIP PRODUCTION SOFTWARE FOR REAL OPERATIONS. <br />
         THE BAKER PROJECT: Loyalty, reservations, and demand forecasting for a bakery.<br /><br /></p>
         <p className="text-sm md:text-xl leading-[1.3] mb-3">
-          1) ABOUT: Check my background (business → data → engineering)<br />
-          2) THE BAKER: See my project (live platform managing bakery operations)<br />
-          3) TLTP: See my personal project to transition into a SWE</p></span>
+          1) ABOUT: My background (business → data → engineering)<br />
+          2) THE BAKER: My project (live platform managing bakery operations)<br />
+          3) TLTP: My transition (188 days to software engineer)</p></span>
       </motion.div>
 
     </main>
