@@ -164,8 +164,7 @@ export default function TLTP() {
       </div>
 
       {/* 7. THE TERMINAL LOG */}
-
-      <div className="w-full bg-[#050505] py-20 px-8">
+      <div className="w-full bg-black py-20 px-8">
         <div className="text-center mb-12">
           <span className="text-sm uppercase tracking-widest text-gray-500 block mb-2">The Evidence</span>
           <h2 className="text-4xl md:text-6xl font-bold uppercase tracking-tighter text-white mb-4">
