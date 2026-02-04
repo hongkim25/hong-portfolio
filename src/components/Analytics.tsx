@@ -4,9 +4,8 @@ export default function Analytics() {
   return (
     <>
       {/* 1. Google Analytics (GA4) */}
-      {/* Replace 'G-XXXXXXXXXX' with your actual Measurement ID */}
       <Script
-        src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXXXXX"
+        src="https://www.googletagmanager.com/gtag/js?id=G-L95KDJTE4N"
         strategy="afterInteractive"
       />
       <Script id="google-analytics" strategy="afterInteractive">
@@ -14,19 +13,18 @@ export default function Analytics() {
           window.dataLayer = window.dataLayer || [];
           function gtag(){dataLayer.push(arguments);}
           gtag('js', new Date());
-          gtag('config', 'G-XXXXXXXXXX');
+          gtag('config', 'G-L95KDJTE4N');
         `}
       </Script>
 
       {/* 2. Microsoft Clarity */}
-      {/* Replace 'YOUR_CLARITY_ID' with the ID provided by Microsoft */}
       <Script id="microsoft-clarity" strategy="afterInteractive">
         {`
           (function(c,l,a,r,i,t,y){
               c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};
               t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i;
               y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);
-          })(window, document, "clarity", "script", "YOUR_CLARITY_ID");
+          })(window, document, "clarity", "script", "vc24r1gqfp");
         `}
       </Script>
     </>
