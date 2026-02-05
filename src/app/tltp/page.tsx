@@ -10,7 +10,7 @@ export default function TLTP() {
         <span className="text-md md:text-2xl uppercase font-semibold text-black block mb-4">
           The Life Transition Project
         </span>
-        <h1 className="text-8xl md:text-[13rem] font-bold uppercase tracking-tighter leading-none mb-6 bg-gradient-to-r from-blue-500 via-purple-700 to-pink-600 bg-clip-text text-transparent">
+        <h1 className="text-8xl md:text-[13rem] font-bold uppercase tracking-tighter leading-none mb-6 bg-gradient-to-r from-blue-200 via-blue-400 to-violet-600 bg-clip-text text-transparent">
           TLTP
         </h1>
         <p className="text-xl md:text-3xl max-w-4xl mx-auto text-gray-800">
@@ -59,8 +59,8 @@ export default function TLTP() {
       {/* 4. THE PHASES */}
       <div className="w-full py-20 px-8">
         <div className="text-center mb-16">
-          <span className="text-sm uppercase tracking-widest text-gray-500 block mb-2">9 Months</span>
-          <h2 className="text-4xl md:text-6xl font-bold uppercase tracking-tighter text-white">
+          <span className="text-sm uppercase tracking-widest text-gray-600 block mb-2">9 Months</span>
+          <h2 className="text-4xl md:text-6xl font-bold uppercase tracking-tighter text-black">
             The Three Phases
           </h2>
         </div>
@@ -135,7 +135,9 @@ export default function TLTP() {
       {/* 5. AI TEACHERS */}
       <div className="w-full bg-white text-black py-16 px-8">
         <div className="max-w-4xl mx-auto text-center">
-          <span className="text-sm uppercase tracking-widest text-gray-500 block mb-4">Self-directed learning</span>
+          <h2 className="text-4xl md:text-6xl font-bold uppercase tracking-tighter text-black mb-12">
+            Self-directed learning
+          </h2>
           <p className="text-xl md:text-2xl leading-relaxed">
             <span className="font-bold">Gemini, ChatGPT, and Claude</span> have been my 24/7 strategic partners. They served as my objective advisors for critical pivots (like the decision to leave my bootcamp), my intensive tutors for Spanish certification, and the troubleshooters that kept momentum alive when I hit walls. They enabled me to maintain the velocity of a full team while operating as one person
           </p>

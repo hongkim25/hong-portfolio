@@ -38,7 +38,7 @@ const themeColors: Record<string, PageTheme> = {
     footerText: "#ffffff",
   },
   "/tltp": {
-    bg: "#a6d0ff",
+    bg: "#e4f2ff",
     text: "#ffffff",
     navBg: "#e332d7",
     navText: "#ffffff",
