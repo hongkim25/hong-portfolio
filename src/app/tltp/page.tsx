@@ -135,11 +135,12 @@ export default function TLTP() {
       {/* 5. AI TEACHERS */}
       <div className="w-full bg-white text-black py-16 px-8">
         <div className="max-w-4xl mx-auto text-center">
+          <span className="text-sm uppercase tracking-widest text-gray-600 block mb-2">PROJECT DESIGN</span>
           <h2 className="text-4xl md:text-6xl font-bold uppercase tracking-tighter text-black mb-12">
             Self-directed learning
           </h2>
           <p className="text-xl md:text-2xl leading-relaxed">
-            <span className="font-bold">Gemini, ChatGPT, and Claude</span> have been my 24/7 strategic partners. They served as my objective advisors for critical pivots (like the decision to leave my bootcamp), my intensive tutors for Spanish certification, and the troubleshooters that kept momentum alive when I hit walls. They enabled me to maintain the velocity of a full team while operating as one person
+            Gemini, ChatGPT, and Claude have been my 24/7 strategic partners. They served as my objective advisors for critical pivots (like the decision to leave my bootcamp), my intensive tutors for Spanish certification, and the troubleshooters that kept momentum alive when I hit walls. They enabled me to maintain the velocity of a team while operating as one person.
           </p>
         </div>
       </div>
@@ -168,7 +169,7 @@ export default function TLTP() {
       {/* 7. THE TERMINAL LOG */}
       <div className="w-full bg-black py-20 px-8">
         <div className="text-center mb-12">
-          <span className="text-sm uppercase tracking-widest text-gray-500 block mb-2">The Evidence</span>
+          <span className="text-sm uppercase tracking-widest text-gray-100 block mb-2">The Evidence</span>
           <h2 className="text-4xl md:text-6xl font-bold uppercase tracking-tighter text-white mb-4">
             DAY BY DAY
           </h2>
