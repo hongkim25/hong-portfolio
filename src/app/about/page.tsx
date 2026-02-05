@@ -116,10 +116,10 @@ export default function About() {
             <h2 className="text-3xl md:text-5xl font-bold uppercase tracking-[-.035em] mb-8">
               Data Analytics in Fashion Retail
             </h2>
-            <p className="text-lg md:text-xl text-gray-700 leading-relaxed mb-8">
+            <p className="text-lg md:text-xl text-gray-700 leading-relaxed mb-3">
               I analyzed loyalty data at H&M and customer behavior at COS to drive business decisions to generate insights.
             </p>
-            <p className="text-xl md:text-2xl font-bold">
+            <p className="text-lg md:text-xl font-semibold">
               Now, I build the systems behind those decisions.
             </p>
           </div>
