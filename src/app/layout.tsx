@@ -3,6 +3,7 @@ import Navbar from '@/components/Navbar'
 import Footer from '@/components/Footer'
 import Analytics from '@/components/Analytics'
 import ThemeProvider from '@/components/ThemeProvider'
+import { Suspense } from 'react'
 import type { Metadata } from 'next'
 import { Inter } from 'next/font/google'
 
@@ -28,7 +29,9 @@ export default function RootLayout({
       </head>
       <body className={`${inter.variable} antialiased bg-[var(--page-bg)] text-[var(--page-text)] flex flex-col min-h-screen transition-colors duration-1000 ease-in-out`}>
         <ThemeProvider>
+        <Suspense fallback={null}>
           <Analytics />
+        </Suspense>
           <Navbar />
 
           <main className="flex-grow">
