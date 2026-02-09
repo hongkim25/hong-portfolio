@@ -214,12 +214,12 @@ export default function TheBaker() {
               </div>
             </div>
             <div className="bg-[#DEAE16]/10 border border-[#DEAE16]/30 p-4 font-mono text-[#DEAE16] text-base md:text-lg mb-6">
-              Goal: Ensure Zero Downtime
+              Goal: Guarantee Operational Resilience
             </div>
             <div className="space-y-3 text-sm md:text-base">
               <div className="flex gap-2">
                 <span className="text-[#DEAE16]">→</span>
-                <span><span className="font-bold">Local Model:</span> <span className="text-gray-200">Linear Regression serialized in ml_model.json (Java memory)</span></span>
+                <span><span className="font-bold">Deterministic Model:</span> <span className="text-gray-200">Serialized Linear Regression stored in Java memory ($O(1)$ access).</span></span>
               </div>
               <div className="flex gap-2">
                 <span className="text-[#DEAE16]">→</span>
