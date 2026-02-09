@@ -7,13 +7,13 @@ export default function TheBaker() {
       {/* 1. HERO - No FadeIn to prevent flash */}
       <div className="w-full py-20 px-8 text-center">
         <span className="font-sans text-[#F2C946] font-semibold uppercase text-xl md:text-2xl block mb-4">
-          Smart Retail Operations Platform
+          Intelligent Retail Operations Platform
         </span>
         <h1 className="text-6xl md:text-[8rem] text-[#6B4423] font-bold uppercase tracking-tighter leading-none mb-8">
           The Baker
         </h1>
         <p className="text-lg md:text-2xl max-w-3xl mx-auto font-serif italic opacity-80">
-          A production platform for a real bakery — built to improve retention and reduce leftovers through better daily decisions.
+          A production-grade architecture that bridges Customer Experience and Operational Efficiency using Hybrid AI.
         </p>
       </div>
 
@@ -35,16 +35,20 @@ export default function TheBaker() {
         </div>
 
       {/* 3. CTA BUTTONS */}
-        <div className="w-full py-8 md:py-16 px-4 md:px-8">
-          <div className="flex flex-row gap-3 md:gap-6 justify-center items-center">
-            <a href="https://thebaker.cc" target="_blank" rel="noopener noreferrer"
-               className="px-3 py-2 md:px-6 md:py-3 bg-[#6B4423] text-white text-sm md:text-2xl font-bold uppercase hover:bg-yellow-100 hover:text-black transition-colors">
-              Live Site
-            </a>
-            <a href="https://github.com/hongkim25/thebaker-portfolio" target="_blank" rel="noopener noreferrer"
-               className="px-3 py-2 md:px-6 md:py-3 bg-[#6B4423] text-white text-sm md:text-2xl font-bold uppercase hover:bg-yellow-100 hover:text-black transition-colors">
-              View GitHub
-            </a>
+        <div className="w-full py-8 md:py-16">
+          <div className="w-full grid grid-cols-2 gap-6">
+            <div className="flex justify-end pr-2 md:pr-4">
+              <a href="https://thebaker.cc" target="_blank" rel="noopener noreferrer"
+                 className="px-3 py-2 md:px-6 md:py-3 bg-[#6B4423] text-white text-sm md:text-2xl font-bold uppercase hover:bg-yellow-100 hover:text-black transition-colors">
+                Live Site
+              </a>
+            </div>
+            <div className="flex justify-start pl-2 md:pl-4">
+              <a href="https://github.com/hongkim25/thebaker-portfolio" target="_blank" rel="noopener noreferrer"
+                 className="px-3 py-2 md:px-6 md:py-3 bg-[#6B4423] text-white text-sm md:text-2xl font-bold uppercase hover:bg-yellow-100 hover:text-black transition-colors">
+                GitHub
+              </a>
+            </div>
           </div>
         </div>
 
@@ -55,24 +59,24 @@ export default function TheBaker() {
         <div className="bg-white text-black p-12 md:p-16">
           <span className="text-sm uppercase tracking-widest opacity-60 block mb-2">For Customers</span>
           <h3 className="text-3xl md:text-4xl font-bold uppercase tracking-tight mb-4">
-            Loyalty + Visibility
+            Real-Time Portal
           </h3>
           <p className="text-lg md:text-xl">
-            Real-time menu visibility, reservations, and a points system that rewards repeat visits.
+            A Progressive Web App for live inventory visibility and reservations — no more wasted trips.
           </p>
         </div>
         <div className="bg-[#47280e] text-white p-12 md:p-16">
           <span className="text-sm uppercase tracking-widest opacity-60 block mb-2">For Staff</span>
           <h3 className="text-3xl md:text-4xl font-bold uppercase tracking-tight mb-4">
-            AI Dashboard
+            Hybrid AI Engine
           </h3>
           <p className="text-lg md:text-xl">
-            Production recommendations using sales history + weather signals. Less guesswork, less waste.
+            A Generative AI agent predicts daily demand, protected by statistical guardrails for zero downtime.
           </p>
         </div>
       </div>
       </FadeIn>
-      
+
       {/* 3. PROOF SECTION - The Numbers */}
         <div className="w-full text-black py-20 px-8">
           <div className="text-center mb-12">
@@ -88,15 +92,15 @@ export default function TheBaker() {
               <span className="text-sm md:text-base text-gray-600 uppercase tracking-wide">Opt-in Rate</span>
             </div>
             <div className="text-center">
-              <span className="block text-5xl md:text-7xl font-bold font-mono text-[#47280e]">200+</span>
+              <span className="block text-5xl md:text-7xl font-bold font-mono text-[#47280e]">300+</span>
               <span className="text-sm md:text-base text-gray-600 uppercase tracking-wide">Real Customers</span>
             </div>
             <div className="text-center">
-              <span className="block text-5xl md:text-7xl font-bold font-mono text-[#47280e]">300+</span>
+              <span className="block text-5xl md:text-7xl font-bold font-mono text-[#47280e]">500+</span>
               <span className="text-sm md:text-base text-gray-600 uppercase tracking-wide">Point Records</span>
             </div>
             <div className="text-center">
-              <span className="block text-5xl md:text-7xl font-bold font-mono text-[#47280e]">100+</span>
+              <span className="block text-5xl md:text-7xl font-bold font-mono text-[#47280e]">150+</span>
               <span className="text-sm md:text-base text-gray-600 uppercase tracking-wide">Repeat Visits</span>
             </div>
           </div>
@@ -120,12 +124,12 @@ export default function TheBaker() {
             </h3>
             <div className="space-y-6">
               <div className="border-l-4 border-red-500 pl-6">
-                <span className="font-bold text-xl block mb-1">Customer Friction</span>
-                <p className="text-gray-400">Unsure if open, no inventory visibility, wasted trips.</p>
+                <span className="font-bold text-xl block mb-1">Demand Volatility</span>
+                <p className="text-gray-400">Weather-dependent sales with no way to predict daily demand accurately.</p>
               </div>
               <div className="border-l-4 border-red-500 pl-6">
                 <span className="font-bold text-xl block mb-1">Operational Waste</span>
-                <p className="text-gray-400">Over-production due to lack of historical data.</p>
+                <p className="text-gray-400">Perishable inventory and guesswork production leading to daily losses.</p>
               </div>
             </div>
           </div>
@@ -139,11 +143,11 @@ export default function TheBaker() {
             <div className="space-y-6">
               <div className="border-l-4 border-[#DEAE16] pl-6">
                 <span className="font-bold text-xl block mb-1">Customer Portal</span>
-                <p className="text-gray-600">Real-time PWA for live stock visibility and reservations.</p>
+                <p className="text-gray-600">Real-time PWA for live inventory visibility, preventing customer friction.</p>
               </div>
               <div className="border-l-4 border-[#DEAE16] pl-6">
-                <span className="font-bold text-xl block mb-1">Staff Dashboard</span>
-                <p className="text-gray-600">AI-assisted decision support for daily production levels.</p>
+                <span className="font-bold text-xl block mb-1">Staff Decision Engine</span>
+                <p className="text-gray-600">Hybrid AI Agent using Generative AI for demand prediction, with statistical safety fallbacks.</p>
               </div>
             </div>
           </div>
@@ -154,76 +158,80 @@ export default function TheBaker() {
         <div className="w-full text-black py-20 px-8 text-center">
           <span className="text-sm uppercase tracking-widest opacity-60 block mb-4">Under The Hood</span>
           <h2 className="text-4xl md:text-6xl font-bold uppercase tracking-tighter leading-none mb-4">
-            Dual-Core<br />Architecture
+            Hybrid AI<br />Architecture
           </h2>
           <p className="text-xl md:text-2xl max-w-3xl mx-auto">
-            Two models working in parallel to optimize production decisions.
+            A RAG pipeline powered by Gemini LLM with a deterministic statistical fallback.
           </p>
         </div>
 
       {/* 8. DEMAND & RISK MODELS - Two columns */}
       <FadeIn>
         <div className="w-full grid grid-cols-1 md:grid-cols-2 gap-0">
-          {/* Demand Model - Left */}
+          {/* Generative Agent - Left */}
           <div className="bg-white text-[#47280e] p-12 md:p-16">
             <div className="flex items-center gap-4 mb-6">
               <span className="text-5xl md:text-7xl font-bold tracking-tight text-[#DEAE16]">01</span>
               <div>
-                <span className="text-sm uppercase tracking-widest text-gray-500 block">Core</span>
+                <span className="text-sm uppercase tracking-widest text-gray-500 block">Primary</span>
                 <h3 className="text-2xl md:text-3xl font-bold uppercase tracking-tight">
-                  Demand Model
+                  Generative Agent
                 </h3>
               </div>
             </div>
             <div className="bg-[#DEAE16]/10 border border-[#DEAE16]/30 p-4 font-mono text-[#DEAE16] text-base md:text-lg mb-6">
-              Goal: Predict Sales
+              RAG: Retrieval-Augmented Generation
             </div>
             <div className="space-y-3 text-sm md:text-base">
               <div className="flex gap-2">
                 <span className="text-[#DEAE16]">→</span>
-                <span><span className="text-[#47280e] font-bold">Algorithm:</span> <span className="text-gray-700">Dynamic Regression (Seasonality + External Signals)</span></span>
+                <span><span className="text-[#47280e] font-bold">Retrieval:</span> <span className="text-gray-700">Nearest-neighbor days from CSV history (e.g., past rainy Tuesdays)</span></span>
               </div>
               <div className="flex gap-2">
                 <span className="text-[#DEAE16]">→</span>
-                <span><span className="text-[#47280e] font-bold">Day of Week:</span> <span className="text-gray-700">One-hot encoded vectors</span></span>
+                <span><span className="text-[#47280e] font-bold">Augmentation:</span> <span className="text-gray-700">Dynamic prompt with sales velocity, weather impact, and trends</span></span>
               </div>
               <div className="flex gap-2">
                 <span className="text-[#DEAE16]">→</span>
-                <span><span className="text-[#47280e] font-bold">Weather:</span> <span className="text-gray-700">Categorical coefficients</span></span>
+                <span><span className="text-[#47280e] font-bold">Generation:</span> <span className="text-gray-700">Gemini 2.5 Flash reasons through data for prediction + explanation</span></span>
               </div>
               <div className="flex gap-2">
                 <span className="text-[#DEAE16]">→</span>
-                <span><span className="text-[#47280e] font-bold">Output:</span> <span className="text-gray-700">Daily production targets</span></span>
+                <span><span className="text-[#47280e] font-bold">Output:</span> <span className="text-gray-700">Quantitative forecast with qualitative reasoning for staff trust</span></span>
               </div>
             </div>
           </div>
 
-          {/* Risk Model - Right */}
+          {/* Statistical Guardrail - Right */}
           <div className="bg-[#47280e] text-white p-12 md:p-16">
             <div className="flex items-center gap-4 mb-6">
               <span className="text-5xl md:text-7xl font-bold tracking-tight text-[#DEAE16]">02</span>
               <div>
-                <span className="text-sm uppercase tracking-widest text-gray-500 block">Core</span>
+                <span className="text-sm uppercase tracking-widest text-gray-500 block">Fallback</span>
                 <h3 className="text-2xl md:text-3xl font-bold uppercase tracking-tight">
-                  Risk Model
+                  Statistical Guardrail
                 </h3>
               </div>
             </div>
             <div className="bg-[#DEAE16]/10 border border-[#DEAE16]/30 p-4 font-mono text-[#DEAE16] text-base md:text-lg mb-6">
-              Goal: Quantify Inventory Risk
+              Goal: Ensure Zero Downtime
             </div>
             <div className="space-y-3 text-sm md:text-base">
               <div className="flex gap-2">
                 <span className="text-[#DEAE16]">→</span>
-                <span><span className="font-bold">Active-Day Filtering:</span> <span className="text-gray-200">Isolates production {'>'} 0</span></span>
+                <span><span className="font-bold">Local Model:</span> <span className="text-gray-200">Linear Regression serialized in ml_model.json (Java memory)</span></span>
               </div>
               <div className="flex gap-2">
                 <span className="text-[#DEAE16]">→</span>
-                <span><span className="font-bold">Risk Score:</span> <span className="text-gray-200">Average loss per active day</span></span>
+                <span><span className="font-bold">Circuit Breaker:</span> <span className="text-gray-200">Auto-degrades if AI sidecar times out ({'>'} 3s) or errors</span></span>
               </div>
               <div className="flex gap-2">
                 <span className="text-[#DEAE16]">→</span>
-                <span><span className="font-bold">Focus:</span> <span className="text-gray-200">Identifies high-risk, high-waste items</span></span>
+                <span><span className="font-bold">Waste Risk:</span> <span className="text-gray-200">Pre-calculated score from active-day filtering (zero-inflated data)</span></span>
+              </div>
+              <div className="flex gap-2">
+                <span className="text-[#DEAE16]">→</span>
+                <span><span className="font-bold">Result:</span> <span className="text-gray-200">The shop always gets a number — no single point of failure</span></span>
               </div>
             </div>
           </div>
@@ -241,23 +249,23 @@ export default function TheBaker() {
           <div className="grid grid-cols-2 md:grid-cols-5 gap-4 max-w-6xl mx-auto">
             <div className="text-center p-6 border border-white/10 hover:border-[#DEAE16] transition-colors">
               <span className="block text-[#DEAE16] text-2xl md:text-3xl font-bold mb-2">Java 17</span>
-              <span className="text-gray-500 text-sm uppercase tracking-wide">Backend</span>
+              <span className="text-gray-500 text-sm uppercase tracking-wide">Spring Boot 3.2</span>
             </div>
             <div className="text-center p-6 border border-white/10 hover:border-[#DEAE16] transition-colors">
-              <span className="block text-[#DEAE16] text-2xl md:text-3xl font-bold mb-2">Spring</span>
-              <span className="text-gray-500 text-sm uppercase tracking-wide">Boot 3.2</span>
+              <span className="block text-[#DEAE16] text-2xl md:text-3xl font-bold mb-2">FastAPI</span>
+              <span className="text-gray-500 text-sm uppercase tracking-wide">AI Sidecar</span>
             </div>
             <div className="text-center p-6 border border-white/10 hover:border-[#DEAE16] transition-colors">
-              <span className="block text-[#DEAE16] text-2xl md:text-3xl font-bold mb-2">Python</span>
-              <span className="text-gray-500 text-sm uppercase tracking-wide">ML Pipeline</span>
+              <span className="block text-[#DEAE16] text-2xl md:text-3xl font-bold mb-2">Gemini</span>
+              <span className="text-gray-500 text-sm uppercase tracking-wide">2.0 Flash</span>
             </div>
             <div className="text-center p-6 border border-white/10 hover:border-[#DEAE16] transition-colors">
               <span className="block text-[#DEAE16] text-2xl md:text-3xl font-bold mb-2">PostgreSQL</span>
               <span className="text-gray-500 text-sm uppercase tracking-wide">Database</span>
             </div>
             <div className="text-center p-6 border border-white/10 hover:border-[#DEAE16] transition-colors">
-              <span className="block text-[#DEAE16] text-2xl md:text-3xl font-bold mb-2">Render</span>
-              <span className="text-gray-500 text-sm uppercase tracking-wide">Deployment</span>
+              <span className="block text-[#DEAE16] text-2xl md:text-3xl font-bold mb-2">Docker</span>
+              <span className="text-gray-500 text-sm uppercase tracking-wide">Infrastructure</span>
             </div>
           </div>
         </div>

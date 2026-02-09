@@ -14,7 +14,7 @@ export default function Home() {
         <span>HONG KIM, SOFTWARE ENGINEER <br /><br />
         <p className="text-sm md:text-xl leading-[2] mb-3">
         I SHIP PRODUCTION SOFTWARE FOR REAL OPERATIONS. <br />
-        THE BAKER PROJECT: Loyalty, reservations, and demand forecasting for a bakery.<br /><br /></p>
+        THE BAKER PROJECT: Hybrid AI platform bridging CX and operations for a bakery.<br /><br /></p>
         <p className="text-sm md:text-xl leading-[1.3] mb-3">
           1) ABOUT: My background (business → data → engineering)<br />
           2) THE BAKER: My project (live platform managing bakery operations)<br />
