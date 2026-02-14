@@ -257,7 +257,7 @@ export default function TheBaker() {
             </div>
             <div className="text-center p-6 border border-white/10 hover:border-[#DEAE16] transition-colors">
               <span className="block text-[#DEAE16] text-2xl md:text-3xl font-bold mb-2">Gemini</span>
-              <span className="text-gray-500 text-sm uppercase tracking-wide">2.0 Flash</span>
+              <span className="text-gray-500 text-sm uppercase tracking-wide">2.5 Flash</span>
             </div>
             <div className="text-center p-6 border border-white/10 hover:border-[#DEAE16] transition-colors">
               <span className="block text-[#DEAE16] text-2xl md:text-3xl font-bold mb-2">PostgreSQL</span>
