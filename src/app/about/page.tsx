@@ -20,7 +20,7 @@ export default function About() {
       {/* 2. CTA BUTTONS - No FadeIn to prevent flash */}
       <div className="w-full py-3 px-4 md:px-8">
         <div className="flex flex-nowrap gap-2 md:gap-3 justify-center">
-          <a href="/Hong_Kim_Backend_Engineer_CV.pdf" target="_blank"
+          <a href="/Honggyun_Kim_CV.pdf" target="_blank"
              className="px-2 py-2 md:px-4 md:py-4 bg-[#015b4e] text-white text-xs md:text-lg font-bold uppercase tracking-wider hover:bg-[#A6F7E3] hover:text-black transition-colors">
             CV
           </a>
