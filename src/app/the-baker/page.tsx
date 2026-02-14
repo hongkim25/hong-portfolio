@@ -219,7 +219,7 @@ export default function TheBaker() {
             <div className="space-y-3 text-sm md:text-base">
               <div className="flex gap-2">
                 <span className="text-[#DEAE16]">→</span>
-                <span><span className="font-bold">Deterministic Model:</span> <span className="text-gray-200">Serialized Linear Regression stored in Java memory ($O(1)$ access).</span></span>
+                <span><span className="font-bold">Deterministic Model:</span> <span className="text-gray-200">Serialized Linear Regression stored in Java memory (O(1) access).</span></span>
               </div>
               <div className="flex gap-2">
                 <span className="text-[#DEAE16]">→</span>
