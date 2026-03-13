@@ -68,10 +68,10 @@ export default function TheBaker() {
         <div className="bg-[#47280e] text-white p-12 md:p-16">
           <span className="text-sm uppercase tracking-widest opacity-60 block mb-2">For Staff</span>
           <h3 className="text-3xl md:text-4xl font-bold uppercase tracking-tight mb-4">
-            Hybrid AI Engine
+            Deterministic AI
           </h3>
           <p className="text-lg md:text-xl">
-            A Generative AI agent predicts daily demand, protected by statistical guardrails for zero downtime.
+            A dual-target machine learning ensemble predicts daily demand and waste margins mathematically.
           </p>
         </div>
       </div>
@@ -147,7 +147,7 @@ export default function TheBaker() {
               </div>
               <div className="border-l-4 border-[#DEAE16] pl-6">
                 <span className="font-bold text-xl block mb-1">Staff Decision Engine</span>
-                <p className="text-gray-600">Hybrid AI Agent using Generative AI for demand prediction, with statistical safety fallbacks.</p>
+                <p className="text-gray-600">Deterministic XGBoost & LSTM ensembles explicitly model separate revenue and waste targets.</p>
               </div>
             </div>
           </div>
@@ -158,10 +158,10 @@ export default function TheBaker() {
         <div className="w-full text-black py-20 px-8 text-center">
           <span className="text-sm uppercase tracking-widest opacity-60 block mb-4">Under The Hood</span>
           <h2 className="text-4xl md:text-6xl font-bold uppercase tracking-tighter leading-none mb-4">
-            Hybrid AI<br />Architecture
+            Deterministic AI<br />Architecture
           </h2>
           <p className="text-xl md:text-2xl max-w-3xl mx-auto">
-            A RAG pipeline powered by Gemini LLM with a deterministic statistical fallback.
+            A dual-target ML orchestrated via LangGraph, pairing XGBoost math with Gemini explanations.
           </p>
         </div>
 
@@ -175,29 +175,29 @@ export default function TheBaker() {
               <div>
                 <span className="text-sm uppercase tracking-widest text-gray-500 block">Primary</span>
                 <h3 className="text-2xl md:text-3xl font-bold uppercase tracking-tight">
-                  Generative Agent
+                  Machine Learning Engine
                 </h3>
               </div>
             </div>
             <div className="bg-[#DEAE16]/10 border border-[#DEAE16]/30 p-4 font-mono text-[#DEAE16] text-base md:text-lg mb-6">
-              RAG: Retrieval-Augmented Generation
+              XGBoost + PyTorch LSTM Dual-Targeting
             </div>
             <div className="space-y-3 text-sm md:text-base">
               <div className="flex gap-2">
                 <span className="text-[#DEAE16]">→</span>
-                <span><span className="text-[#47280e] font-bold">Retrieval:</span> <span className="text-gray-700">Nearest-neighbor days from CSV history (e.g., past rainy Tuesdays)</span></span>
+                <span><span className="text-[#47280e] font-bold">Dual-Target:</span> <span className="text-gray-700">Models explicitly predict `sold_qty` and `waste_qty` as separate buffers.</span></span>
               </div>
               <div className="flex gap-2">
                 <span className="text-[#DEAE16]">→</span>
-                <span><span className="text-[#47280e] font-bold">Augmentation:</span> <span className="text-gray-700">Dynamic prompt with sales velocity, weather impact, and trends</span></span>
+                <span><span className="text-[#47280e] font-bold">Anti-Leakage:</span> <span className="text-gray-700">Uses strict shift(1) moving averages and 28-day temporal windows.</span></span>
               </div>
               <div className="flex gap-2">
                 <span className="text-[#DEAE16]">→</span>
-                <span><span className="text-[#47280e] font-bold">Generation:</span> <span className="text-gray-700">Gemini 2.5 Flash reasons through data for prediction + explanation</span></span>
+                <span><span className="text-[#47280e] font-bold">Ensemble Circuit Breaker:</span> <span className="text-gray-700">Compares XGBoost vs LSTM gap; if &gt;20%, triggers anomaly degradation.</span></span>
               </div>
               <div className="flex gap-2">
                 <span className="text-[#DEAE16]">→</span>
-                <span><span className="text-[#47280e] font-bold">Output:</span> <span className="text-gray-700">Quantitative forecast with qualitative reasoning for staff trust</span></span>
+                <span><span className="text-[#47280e] font-bold">Safe Output:</span> <span className="text-gray-700">LLMs never guess numbers. Integers are mathematically validated first.</span></span>
               </div>
             </div>
           </div>
@@ -207,31 +207,31 @@ export default function TheBaker() {
             <div className="flex items-center gap-4 mb-6">
               <span className="text-5xl md:text-7xl font-bold tracking-tight text-[#DEAE16]">02</span>
               <div>
-                <span className="text-sm uppercase tracking-widest text-gray-500 block">Fallback</span>
+                <span className="text-sm uppercase tracking-widest text-gray-500 block">Orchestrator</span>
                 <h3 className="text-2xl md:text-3xl font-bold uppercase tracking-tight">
-                  Statistical Guardrail
+                  LangGraph + Gemini
                 </h3>
               </div>
             </div>
             <div className="bg-[#DEAE16]/10 border border-[#DEAE16]/30 p-4 font-mono text-[#DEAE16] text-base md:text-lg mb-6">
-              Goal: Guarantee Operational Resilience
+              Goal: Human-Readable Staff Trust
             </div>
             <div className="space-y-3 text-sm md:text-base">
               <div className="flex gap-2">
                 <span className="text-[#DEAE16]">→</span>
-                <span><span className="font-bold">Deterministic Model:</span> <span className="text-gray-200">Serialized Linear Regression stored in Java memory (O(1) access).</span></span>
+                <span><span className="font-bold">LangGraph DAG:</span> <span className="text-gray-200">State machine coordinates concurrent XGBoost/LSTM execution nodes.</span></span>
               </div>
               <div className="flex gap-2">
                 <span className="text-[#DEAE16]">→</span>
-                <span><span className="font-bold">Circuit Breaker:</span> <span className="text-gray-200">Auto-degrades if AI sidecar times out ({'>'} 3s) or errors</span></span>
+                <span><span className="font-bold">Pydantic LLM Boundary:</span> <span className="text-gray-200">Gemini is strictly fed the finalized integers using fixed schema limits.</span></span>
               </div>
               <div className="flex gap-2">
                 <span className="text-[#DEAE16]">→</span>
-                <span><span className="font-bold">Waste Risk:</span> <span className="text-gray-200">Pre-calculated score from active-day filtering (zero-inflated data)</span></span>
+                <span><span className="font-bold">Qualitative Briefing:</span> <span className="text-gray-200">LLM translates the weather impact into a conversational bakery summary.</span></span>
               </div>
               <div className="flex gap-2">
                 <span className="text-[#DEAE16]">→</span>
-                <span><span className="font-bold">Result:</span> <span className="text-gray-200">The shop always gets a number — no single point of failure</span></span>
+                <span><span className="font-bold">Result:</span> <span className="text-gray-200">Staff receive a completely transparent, math-backed production plan.</span></span>
               </div>
             </div>
           </div>
@@ -253,11 +253,11 @@ export default function TheBaker() {
             </div>
             <div className="text-center p-6 border border-white/10 hover:border-[#DEAE16] transition-colors">
               <span className="block text-[#DEAE16] text-2xl md:text-3xl font-bold mb-2">FastAPI</span>
-              <span className="text-gray-500 text-sm uppercase tracking-wide">AI Sidecar</span>
+              <span className="text-gray-500 text-sm uppercase tracking-wide">LangGraph API</span>
             </div>
             <div className="text-center p-6 border border-white/10 hover:border-[#DEAE16] transition-colors">
-              <span className="block text-[#DEAE16] text-2xl md:text-3xl font-bold mb-2">Gemini</span>
-              <span className="text-gray-500 text-sm uppercase tracking-wide">2.5 Flash</span>
+              <span className="block text-[#DEAE16] text-2xl md:text-3xl font-bold mb-2">XGBoost</span>
+              <span className="text-gray-500 text-sm uppercase tracking-wide">Dual-Target ML</span>
             </div>
             <div className="text-center p-6 border border-white/10 hover:border-[#DEAE16] transition-colors">
               <span className="block text-[#DEAE16] text-2xl md:text-3xl font-bold mb-2">PostgreSQL</span>
