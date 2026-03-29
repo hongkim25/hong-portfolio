@@ -11,14 +11,14 @@ export default function Home() {
         animate={{ opacity: 1 }}
         transition={{ duration: 0.5 }}
         className="flex gap-6 text-2xl md:text-5xl leading-[1.5] font-medium text-gray-100 z-10">
-        <span>HONG KIM, SOFTWARE ENGINEER <br /><br />
+        <span>HONG KIM, PRODUCT BUILDER <br /><br />
         <p className="text-sm md:text-xl leading-[2] mb-3">
         I SHIP PRODUCTION SOFTWARE FOR REAL OPERATIONS. <br />
         THE BAKER PROJECT: Hybrid AI platform bridging CX and operations for a bakery.<br /><br /></p>
         <p className="text-sm md:text-xl leading-[1.3] mb-3">
           1) ABOUT: My background (business → data → engineering)<br />
           2) THE BAKER: My project (live platform managing bakery operations)<br />
-          3) TLTP: My transition (188 days to software engineer)</p></span>
+          3) TLTP: My transition (240 days to software engineering)</p></span>
       </motion.div>
 
     </main>
