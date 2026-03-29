@@ -5,8 +5,123 @@ const LOG_DATA = `THE LIFE TRANSITION PROJECT: 1 AUGUST 2025 - 30 APRIL 2026 (39
 
 [CURRENT STATE]: LAUNCH PHASE INITIATED
 ---------------------------------------------------
+WEEK 35
+29 MAR 2026 - Woke up at 6:50. Finished Google AI for Writing and Communicating course, kept building an anti-theft android app, talked to Gemini/Claude/ChatGPT, practiced Python on Brilliant and Datacamp, and practiced French on Babbel/Duolingo.
+
+28 MAR 2026 - Woke up at 7:50. Talked to Gemini/Claude/ChatGPT, practiced Python on Brilliant and Datacamp, and practiced French on Babbel/Duolingo.
+
+27 MAR 2026 - Woke up at 6:50. Continued Andrew Ng's machine learning specialization (completed part of week 2 of course 2), talked to Gemini/Claude/ChatGPT, practiced Python on Brilliant and Datacamp, and practiced French on Babbel/Duolingo.
+
+WEEK 34
+26 MAR 2026 - Woke up at 6:20. Continued Andrew Ng's machine learning specialization (completed part of week 2 of course 2), talked to Gemini/Claude/ChatGPT, practiced Python on Brilliant and Datacamp, and practiced French on Babbel/Duolingo.
+
+25 MAR 2026 - Woke up at 7:00. Continued Andrew Ng's machine learning specialization (completed part of week 2 of course 2), talked to Gemini/Claude/ChatGPT, practiced Python on Brilliant and Datacamp, and practiced French on Babbel/Duolingo.
+
+24 MAR 2026 - Woke up at 7:10. Continued Andrew Ng's machine learning specialization (completed part of week 2 of course 2), continued reading "Easy Deep Learning" (completed chapter 3), kept reading building AI agents (completed chapter 13-14), kept building an anti-theft android app, talked to Gemini/Claude/ChatGPT, practiced Python on Brilliant and Datacamp, and practiced French on Babbel/Duolingo.
+
+23 MAR 2026 - Woke up at 7:20. Started reading "Easy Deep Learning" (completed chapter 1-2), kept building an anti-theft android app, talked to Gemini/Claude/ChatGPT, practiced Python on Brilliant and Datacamp, and practiced French on Babbel/Duolingo.
+
+22 MAR 2026 - Woke up at 7:50. Kept reading building AI agents (completed chapter 7-13), talked to Gemini/Claude/ChatGPT, practiced Python on Brilliant and Datacamp, and practiced French on Babbel/Duolingo.
+
+21 MAR 2026 - Woke up at 7:40. Continued Andrew Ng's machine learning specialization (completed week 1 of course 2), talked to Gemini/Claude/ChatGPT, practiced Python on Brilliant and Datacamp, and practiced French on Babbel/Duolingo.
+
+20 MAR 2026 - Woke up at 7:25. Talked to Gemini/Claude/ChatGPT, practiced Python on Brilliant and Datacamp, and practiced French on Babbel/Duolingo.
+
+WEEK 33
+19 MAR 2026 - Woke up at 8:20. Finished Google AI for Brainstorming and Planning course, talked to Gemini/Claude/ChatGPT, practiced Python on Brilliant and Datacamp, and practiced French on Babbel/Duolingo.
+
+18 MAR 2026 - Woke up at 7:40. Kept building an anti-theft android app, talked to Gemini/Claude/ChatGPT, practiced Python on Brilliant and Datacamp, and practiced French on Babbel/Duolingo.
+
+17 MAR 2026 - Woke up at 7:50. Finished deploying The Baker ML V3, kept building an anti-theft android app, talked to Gemini/Claude/ChatGPT, practiced Python on Brilliant and Datacamp, and practiced French on Babbel/Duolingo.
+
+16 MAR 2026 - Woke up at 7:50. Started building an anti-theft android app, kept building RNWY, talked to Gemini/Claude/ChatGPT, practiced Python on Brilliant and Datacamp, and practiced French on Babbel/Duolingo.
+
+15 MAR 2026 - Woke up at 7:50. Kept building RNWY, talked to Gemini/Claude/ChatGPT, practiced Python on Brilliant and Datacamp, and practiced French on Babbel/Duolingo.
+
+14 MAR 2026 - Woke up at 7:00. Kept building RNWY, talked to Gemini/Claude/ChatGPT, practiced Python on Brilliant and Datacamp, and practiced French on Babbel/Duolingo.
+
+13 MAR 2026 - Woke up at 7:00. Built The Baker ML v3, started building RNWY, talked to Gemini/Claude/ChatGPT, practiced Python on Brilliant and Datacamp, and practiced French on Babbel/Duolingo.
+
+WEEK 32
+12 MAR 2026 - Woke up at 7:10. Talked to Gemini/Claude/ChatGPT, practiced Python on Brilliant and Datacamp, and practiced French on Babbel/Duolingo.
+
+11 MAR 2026 - Woke up at 6:50. Started Google AI fir Brainstorming and Planning course, talked to Gemini/Claude/ChatGPT, practiced Python on Brilliant and Datacamp, and practiced French on Babbel/Duolingo.
+
+10 MAR 2026 - Woke up at 7:20. Finished Google AI fundamentals course, talked to Gemini/Claude/ChatGPT, practiced Python on Brilliant and Datacamp, and practiced French on Babbel/Duolingo.
+
+9 MAR 2026 - Woke up at 7:50. Talked to Gemini/Claude/ChatGPT, practiced Python on Brilliant and Datacamp, and practiced French on Babbel/Duolingo.
+
+8 MAR 2026 - Woke up at 7:30. Talked to Gemini/Claude/ChatGPT, practiced Python on Brilliant and Datacamp, and practiced French/Spanish on Babbel/Duolingo.
+
+7 MAR 2026 - Woke up at 5:50. Talked to Gemini/Claude/ChatGPT, practiced Python on Brilliant and Datacamp, and practiced French/Spanish on Babbel/Duolingo.
+
+6 MAR 2026 - Woke up at 6:50. Talked to Gemini/Claude/ChatGPT, practiced Python on Brilliant and Datacamp, and practiced French/Spanish on Babbel/Duolingo.
+
+WEEK 31
+5 MAR 2026 - Woke up at 7:20. Talked to Gemini/Claude/ChatGPT, practiced Python on Brilliant and Datacamp, and practiced French/Spanish on Babbel/Duolingo.
+
+4 MAR 2026 - Woke up at 8:20. Built the structure for improving RUNWAY, reviewed Neetcode DS&A (Search Array, Search Range), talked to Gemini/Claude/ChatGPT, practiced Python on Brilliant and Datacamp, and practiced French/Spanish on Babbel/Duolingo.
+
+3 MAR 2026 - Woke up at 8:20. Reviewed Neetcode DS&A (Search Array, Search Range), Talked to Gemini/Claude/ChatGPT, practiced Python on Brilliant and Datacamp, and practiced French/Spanish on Babbel/Duolingo.
+
+2 MAR 2026 - Woke up at 8:20. Came back to Daejeon from Seoul. Talked to Gemini/Claude/ChatGPT, practiced Python on Brilliant and Datacamp, and practiced French/Spanish on Babbel/Duolingo.
+
+1 MAR 2026 - Woke up at 8:00. Talked to Gemini/Claude/ChatGPT, practiced Python on Brilliant and Datacamp, and practiced French/Spanish on Babbel/Duolingo.
+
+28 FEB 2026 - Woke up at 6:00. Spent the whole day at the the Google hackathon, reviewed Neetcode DS&A (Search Array, Search Range), talked to Gemini/Claude/ChatGPT, continued Containerization and Virtualization Concepts course on Datacamp, practiced Python on Brilliant, and practiced French/Spanish on Babbel/Duolingo.
+
+27 FEB 2026 - Woke up at 7:20. Set up for the Google hackathon, reviewed Neetcode DS&A (Search Array, Search Range), talked to Gemini/Claude/ChatGPT, continued Containerization and Virtualization Concepts course on Datacamp, practiced Python on Brilliant, and practiced French/Spanish on Babbel/Duolingo.
+
+WEEK 30
+26 FEB 2026 - Woke up at 7:20. Reviewed Neetcode DS&A (Quick Sort, Bucket Sort), talked to Gemini/Claude/ChatGPT, continued Containerization and Virtualization Concepts course on Datacamp, practiced Python on Brilliant, and practiced French/Spanish on Babbel/Duolingo.
+
+25 FEB 2026 - Woke up at 6:30. Reviewed Neetcode DS&A (Insertion Sort, Merge Sort), talked to Gemini/Claude/ChatGPT, continued Containerization and Virtualization Concepts course on Datacamp, practiced Python on Brilliant, and practiced French/Spanish on Babbel/Duolingo.
+
+24 FEB 2026 - Woke up at 6:30. Completed Algorithms for Coding Tests course (completed 56 out of 56 lectures), reviewed Neetcode DS&A (Factorial, Fibonacci Sequence), talked to Gemini/Claude/ChatGPT, continued Containerization and Virtualization Concepts course on Datacamp, practiced Python on Brilliant, and practiced French/Spanish on Babbel/Duolingo.
+
+23 FEB 2026 - Woke up at 7:30. Continued Algorithms for Coding Tests course (completed 55 out of 56 lectures), reviewed Neetcode DS&A (Singly linked lists, Doubly linked lists, Queues), talked to Gemini/Claude/ChatGPT, continued Containerization and Virtualization Concepts course on Datacamp, practiced Python on Brilliant, and practiced French/Spanish on Babbel/Duolingo.
+
+22 FEB 2026 - Woke up at 6:30. Continued Algorithms for Coding Tests course (completed 54 out of 56 lectures), reviewed Neetcode DS&A (Static Arrays, Dynamic Arrays, Stacks), talked to Gemini/Claude/ChatGPT, continued Containerization and Virtualization Concepts course on Datacamp, practiced Python on Brilliant, and practiced French/Spanish on Babbel/Duolingo.
+
+21 FEB 2026 - Woke up at 7:10. Continued Algorithms for Coding Tests course (completed 53 out of 56 lectures), reviewed Neetcode DS&A (Introduction, RAM), talked to Gemini/Claude/ChatGPT, started Containerization and Virtualization Concepts course on Datacamp, practiced Python on Brilliant, and practiced French/Spanish on Babbel/Duolingo.
+
+20 FEB 2026 - Woke up at 6:10. Continued Algorithms for Coding Tests course (completed 52 out of 56 lectures), reviewed Neetcode 150 (Group Anagrams), talked to Gemini/Claude/ChatGPT, continued Linear Classifiers in Python course on Datacamp, practiced Python on Brilliant, and practiced French/Spanish on Babbel/Duolingo.
+
+WEEK 29
+19 FEB 2026 - Woke up at 8:20. Continued Algorithms for Coding Tests course (completed 51 out of 56 lectures), reviewed Neetcode 150 (Top K Frequent Elements), talked to Gemini/Claude/ChatGPT, continued Linear Classifiers in Python course on Datacamp, practiced Python on Brilliant, and practiced French/Spanish on Babbel/Duolingo.
+
+18 FEB 2026 - Woke up at 6:20. Continued Algorithms for Coding Tests course (completed 50 out of 56 lectures), reviewed Neetcode 150 (Encoding and decoding), talked to Gemini/Claude/ChatGPT, started Linear Classifiers in Python course on Datacamp, practiced Python on Brilliant, and practiced French/Spanish on Babbel/Duolingo.
+
+17 FEB 2026 - Woke up at 6:30. Continued Algorithms for Coding Tests course (completed 49 out of 56 lectures), reviewed Neetcode 150 (Product of Array Except Self), talked to Gemini/Claude/ChatGPT, completed Huggingface course on Datacamp, practiced Python on Brilliant, and practiced French/Spanish on Babbel/Duolingo.
+
+16 FEB 2026 - Woke up at 6:40. Continued reading "Backend development for getting a job" (completed chapter 2), continued reading "Coding test for getting a job" (completed chapter 2), continued Algorithms for Coding Tests course (completed 48 out of 56 lectures), reviewed Neetcode 150 (Valid Sudoku), talked to Gemini/Claude/ChatGPT, continued Huggingface course on Datacamp, practiced Python on Brilliant, and practiced French/Spanish on Babbel/Duolingo.
+
+15 FEB 2026 - Woke up at 5:20. Started reading "Backend development for getting a job" (completed chapter 1), started reading "Coding test for getting a job" (completed chapter 1), continued Algorithms for Coding Tests course (completed 47 out of 56 lectures), reviewed Neetcode 150 (Longest Consecutive Sequence), talked to Gemini/Claude/ChatGPT, continued Huggingface course on Datacamp, practiced Python on Brilliant, and practiced French/Spanish on Babbel/Duolingo.
+
+14 FEB 2026 - Woke up at 6:20. Started reading "Making an AI Agent using LangChain & LangGraph" (completed chapter 1-5), continued Algorithms for Coding Tests course (completed 46 out of 56 lectures), reviewed Neetcode 150 (Container With Most Water), talked to Gemini/Claude/ChatGPT, continued Huggingface course on Datacamp, practiced Python on Brilliant, and practiced French/Spanish on Babbel/Duolingo.
+
+13 FEB 2026 - Woke up at 6:20. Continued Algorithms for Coding Tests course (completed 45 out of 56 lectures), reviewed Neetcode 150 (Trapping Rain Water), talked to Gemini/Claude/ChatGPT, continued Huggingface course on Datacamp, practiced Python on Brilliant, and practiced French/Spanish on Babbel/Duolingo.
+
+WEEK 28
+12 FEB 2026 - Woke up at 4:20. Continued Algorithms for Coding Tests course (completed 44 out of 56 lectures), reviewed Neetcode 150 (Longest Repeating Character Replacement), talked to Gemini/Claude/ChatGPT, continued Huggingface course on Datacamp, practiced Python on Brilliant, and practiced French/Spanish on Babbel/Duolingo.
+
+11 FEB 2026 - Woke up at 6:00. Continued Algorithms for Coding Tests course (completed 43 out of 56 lectures), reviewed Neetcode 150 (Permutation in Spring), talked to Gemini/Claude/ChatGPT, continued Huggingface course on Datacamp, practiced Python on Brilliant, and practiced French/Spanish on Babbel/Duolingo.
+
+10 FEB 2026 - Woke up at 6:30. Continued Algorithms for Coding Tests course (completed 42 out of 56 lectures), reviewed Neetcode 150 (Evaluate Reverse Polish Notation), talked to Gemini/Claude/ChatGPT, continued Huggingface course on Datacamp, practiced Python on Brilliant, and practiced French/Spanish on Babbel/Duolingo.
+
+9 FEB 2026 - Woke up at 5:50. Continued Algorithms for Coding Tests course (completed 41 out of 56 lectures), reviewed Neetcode 150 (Daily Temperatures), talked to Gemini/Claude/ChatGPT, continued Huggingface course on Datacamp, practiced Python on Brilliant, and practiced French/Spanish on Babbel/Duolingo.
+
+8 FEB 2026 - Woke up at 6:20. Continued Algorithms for Coding Tests course (completed 40 out of 56 lectures), continued Andrew Ng's machine learning specialization (completed part of week 1 of course 2), reviewed Neetcode 150 (Car Fleet), talked to Gemini/Claude/ChatGPT, completed Data Types and Exceptions in Java course on Datacamp, practiced Python on Brilliant, and practiced French/Spanish on Babbel/Duolingo.
+
+7 FEB 2026 - Woke up at 6:20. Continued Algorithms for Coding Tests course (completed 39 out of 56 lectures), reviewed Neetcode 150 (Koko Eating Bananas), completed lecture 5 of AI product builder by JoCoding, talked to Gemini/Claude/ChatGPT, continued Data Types and Exceptions in Java course on Datacamp, practiced Python on Brilliant, and practiced French/Spanish on Babbel/Duolingo.
+
+6 FEB 2026 - Woke up at 6:00. Continued Algorithms for Coding Tests course (completed 38 out of 56 lectures), reviewed Neetcode 150 (Search In Rotated Sorted Array), talked to Gemini/Claude/ChatGPT, continued Data Types and Exceptions in Java course on Datacamp, practiced Python on Brilliant, and practiced French/Spanish on Babbel/Duolingo.
 
 WEEK 27
+5 FEB 2026 - Woke up at 6:40. Continued making some design changes of the personal website, continued Algorithms for Coding Tests course (completed 37 out of 56 lectures), reviewed Neetcode 150 (Time Based Key-Value Store), talked to Gemini/Claude/ChatGPT, continued Data Types and Exceptions in Java course on Datacamp, practiced Python on Brilliant, and practiced French/Spanish on Babbel/Duolingo.
+
+4 FEB 2026 - Woke up at 5:50. Finished making the personal website, continued Algorithms for Coding Tests course (completed 36 out of 56 lectures), reviewed Neetcode 150 (Reorder List), talked to Gemini/Claude/ChatGPT, continued Data Types and Exceptions in Java course on Datacamp, practiced Python on Brilliant, and practiced French/Spanish on Babbel/Duolingo.
+
 3 FEB 2026 - Woke up at 6:50. Started making the personal website, continued Algorithms for Coding Tests course (completed 35 out of 56 lectures), reviewed Neetcode 150 (Remove Nth Node from End of List), talked to Gemini/Claude/ChatGPT, continued Data Types and Exceptions in Java course on Datacamp, practiced Python on Brilliant, and practiced French/Spanish on Babbel/Duolingo.
 
 2 FEB 2026 - Woke up at 6:50. Continued pushing minor updates for the bakery app, continued Algorithms for Coding Tests course (completed 34 out of 56 lectures), reviewed Neetcode 150 (Copy List With Random Pointers), talked to Gemini/Claude/ChatGPT, continued Data Types and Exceptions in Java course on Datacamp, practiced Python on Brilliant, and practiced French/Spanish on Babbel/Duolingo.

@@ -22,11 +22,11 @@ export default function TLTP() {
       <div className="w-full text-black py-4 px-4 md:px-8">
         <div className="grid grid-cols-3 gap-0 max-w-5xl mx-auto">
           <div className="text-center p-3 md:p-8 border-r border-black/20">
-            <span className="block text-3xl md:text-8xl tracking-tighter mb-1 md:mb-2">1,900+</span>
+            <span className="block text-3xl md:text-8xl tracking-tighter mb-1 md:mb-2">2,000+</span>
             <span className="uppercase tracking-wider text-xs md:text-lg font-bold opacity-70">Hours</span>
           </div>
           <div className="text-center p-3 md:p-8 border-r border-black/20">
-            <span className="block text-3xl md:text-8xl tracking-tighter mb-1 md:mb-2">188</span>
+            <span className="block text-3xl md:text-8xl tracking-tighter mb-1 md:mb-2">240</span>
             <span className="uppercase tracking-wider text-xs md:text-lg font-bold opacity-70">Days</span>
           </div>
           <div className="text-center p-3 md:p-8">
